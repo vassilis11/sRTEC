@@ -1,0 +1,5 @@
+HoldsFor [union foo] true = (3-20 24-80 84-200 300-310 400-480 600-2000)
+
+HoldsFor [intersect foo] true = ()
+
+HoldsFor [relative_complement foo] true = (120-194 302-453 732-921)

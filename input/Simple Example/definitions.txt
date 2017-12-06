@@ -1,0 +1,42 @@
+
+> InitiatedAt [location P = X] T
+    HappensAt [goes_to P X] T
+
+> TerminatedAt [location P = X] T
+    HappensAt [leaves P X] T
+
+> HoldsFor [indoors P = true] T
+    HoldsFor [location P = home] T1
+    HoldsFor [location P = work] T2
+    HoldsFor [location P = bar] T3
+    Union_All [T1 T2 T3] T
+
+> HoldsFor [feeling P = happy] T
+    HoldsFor [listens_to_music P = true] T
+
+> HoldsFor [feeling P = happy] T
+    HoldsFor [location P = bar] T1
+    HoldsFor [talking P _P2 = true] T2
+    HoldsFor [talking _P3 P = true] T3
+    Union_All [T2 T3] T4
+    Intersect_All [T1 T4] T
+
+> HoldsFor [feeling P = tired] T
+    HoldsFor [location P = work] T1
+    HoldsFor [sleeping P = true] T2
+    Intersect_All [T1 T2] T
+
+> HoldsFor [feeling P = sad] T
+    HoldsFor [location P = work] T1
+    HoldsFor [talking P _P2 = true] T2
+    HoldsFor [talking _P3 P = true] T3
+    HoldsFor [feeling P = tired] T4
+    HoldsFor [feeling P = happy] T5
+    Relative_Complement_All T1 [T2 T3 T4 T5] T
+
+> HoldsFor [feeling P = sad] T
+    HoldsFor [raining_upon P = true] T1
+    HoldsFor [indoors P = true] T2
+    HoldsFor [feeling P = happy] T3
+    Relative_Complement_All T1 [T2 T3] T
+

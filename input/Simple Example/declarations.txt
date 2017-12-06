@@ -1,0 +1,53 @@
+InstantEvents {
+    Input: [goes_to 2]
+    Input: [leaves 2]
+
+}
+
+Fluents {
+    Simple: [location 1 = home]
+    Simple: [location 1 = work]
+    Simple: [location 1 = bar]
+
+    InputSD: [sleeping 1 = true]
+    InputSD: [raining_upon 1 = true]
+    InputSD: [talking 2 = true]
+    InputSD: [listens_to_music 1 = true]
+
+    OutputSD: [indoors 1 = true]
+    OutputSD: [feeling 1 = happy]
+    OutputSD: [feeling 1 = sad]
+    OutputSD: [feeling 1 = tired]
+}
+
+InputEntities {
+    Person 1:
+        [sleeping = true]
+        [raining_upon = true]
+        [listens_to_music = true]
+
+    PairOfPersons 2:
+        [talking = true]
+
+    PersonOnLocation 2:
+        [goes_to]
+        [leaves]
+}
+
+BuiltEntities {
+    AnyPerson 1:
+        [Person()]
+        [PairOfPersons(0)]
+        [PairOfPersons(1)]
+        [PersonOnLocation(0)]
+}
+
+CachingOrder {
+    [location 1 = home]     -> AnyPerson
+    [location 1 = work]     -> AnyPerson
+    [location 1 = bar]      -> AnyPerson
+    [indoors 1 = true]      -> AnyPerson
+    [feeling 1 = happy]     -> AnyPerson
+    [feeling 1 = tired]     -> AnyPerson
+    [feeling 1 = sad]       -> AnyPerson
+}

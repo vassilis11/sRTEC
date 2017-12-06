@@ -1,0 +1,5 @@
+> InitiatedAt [sf foo = V] T
+    HappensAt [ie_start V] T
+
+> TerminatedAt [sf foo = V] T
+    HappensAt [ie_end V] T

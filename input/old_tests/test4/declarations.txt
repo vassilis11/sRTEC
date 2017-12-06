@@ -1,0 +1,41 @@
+InstantEvents {}
+
+Fluents {
+    union1 1: SDInput = {true}
+    union2 1: SDInput = {true}
+    union3 1: SDInput = {true}
+    union4 1: SDInput = {true}
+    union 1: SDOutput = {true}
+
+    intersect1 1: SDInput = {true}
+    intersect2 1: SDInput = {true}
+    intersect3 1: SDInput = {true}
+    intersect4 1: SDInput = {true}
+    intersect 1: SDOutput = {true}
+
+    relative_complement1 1: SDInput = {true}
+    relative_complement2 1: SDInput = {true}
+    relative_complement3 1: SDInput = {true}
+    relative_complement4 1: SDInput = {true}
+    relative_complement 1: SDOutput = {true}
+}
+
+CachingOrder {
+    union1 1
+    union2 1
+    union3 1
+    union4 1
+    union 1
+
+    intersect1 1
+    intersect2 1
+    intersect3 1
+    intersect4 1
+    intersect 1
+
+    relative_complement1 1
+    relative_complement2 1
+    relative_complement3 1
+    relative_complement4 1
+    relative_complement 1
+}

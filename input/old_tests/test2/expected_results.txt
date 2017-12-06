@@ -1,0 +1,25 @@
+HappensAt [quits_job chris] 40
+
+HappensAt [buys chris wallet] 2
+
+HoldsFor [location john] home=(21-24 28-36) pub=(24-28) work=(13-21 36-inf)
+HoldsFor [location chris] home=(26-inf) pub=(19-26) work=(11-19)
+
+HoldsFor [rich chris] true=(41-51) false=(51-inf)
+HoldsFor [rich john] true=(0-1) false=(0-1)
+
+HoldsFor [has chris wallet] true=(3-51) false=(51-inf)
+
+HoldsFor [has_job chris] true=(3-41) false=(41-inf)
+HoldsFor [has_job john] true=(0-1) false=(0-1)
+
+HoldsFor[friends chris chris] true=(11-26)
+HoldsFor[friends chris john] true=(13-19 24-26)
+HoldsFor[friends john chris] true=(13-19 24-26)
+HoldsFor[friends john john] true=(13-21 24-28 36-inf)
+
+HoldsFor [poor chris] true=(51-inf)
+HoldsFor [poor john] true=(0-1)
+
+HoldsFor [mood chris] happy=(19-26 41-51) sad=(11-19 51-inf)
+HoldsFor [mood john] happy=(24-28) sad=(13-21 36-inf)

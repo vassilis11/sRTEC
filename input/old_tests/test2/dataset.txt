@@ -1,0 +1,15 @@
+HappensAt [finds_job chris] 2
+
+HappensAt [go_to chris work] 10
+HappensAt [go_to chris pub] 18
+HappensAt [go_to chris home] 25
+
+HappensAt [go_to john work] 12
+HappensAt [go_to john home] 20
+HappensAt [go_to john pub] 23
+HappensAt [go_to john home] 27
+HappensAt [go_to john work] 35
+
+HappensAt [win_lottery chris] 40
+HappensAt [loses chris wallet] 50
+

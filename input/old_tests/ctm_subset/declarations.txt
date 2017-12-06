@@ -1,0 +1,60 @@
+InstantEvents {
+    stop_enter 4: Input
+    stop_leave 4: Input
+    internal_temperature_change 3: Input
+    noise_level_change 3: Input
+    passenger_density_change 3: Input
+    punctuality_change 3: Output
+}
+
+Fluents {
+    punctuality 2:
+        Simple = {punctual}
+        SDOutput = {non_punctual}
+
+    passenger_density 2:
+        Simple = {low, high}
+
+    noise_level 2:
+        Simple = {high, low}
+
+    internal_temperature 2:
+        Simple = {very_warm, very_cold, cold, warm, normal}
+
+    abrupt_acceleration 2:
+        SDInput = {abrupt, very_abrupt}
+
+    abrupt_deceleration 2:
+        SDInput = {abrupt, very_abrupt}
+
+    sharp_turn 2:
+        SDInput = {sharp, very_sharp}
+
+    driving_style 2:
+        SDOutput = {unsafe, uncomfortable}
+
+    driving_quality 2:
+        SDOutput = {high, medium, low}
+
+    passenger_comfort 2:
+        SDOutput = {reducing}
+
+    driver_comfort 2:
+        SDOutput = {reducing}
+
+    passenger_satisfaction 2:
+        SDOutput = {reducing}
+}
+
+CachingOrder {
+    punctuality 2
+    punctuality_change 3
+    passenger_density 2
+    noise_level 2
+    internal_temperature 2
+    driving_style 2
+    driving_quality 2
+    passenger_comfort 2
+    driver_comfort 2
+    passenger_satisfaction 2
+}

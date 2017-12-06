@@ -1,0 +1,58 @@
+> HappensAt [buys X wallet] T
+	HappensAt [finds_job X] T
+
+> HappensAt [quits_job X] T
+	HappensAt [win_lottery X] T
+
+> InitiatedAt [location X = Y] T
+	HappensAt [go_to X Y] T
+
+> InitiatedAt [rich X = true] T
+	HappensAt [win_lottery X] T
+
+> InitiatedAt [rich X = false] T
+	HappensAt [loses X wallet] T
+
+> InitiatedAt [has X Y = true] T
+	HappensAt [buys X Y] T
+
+
+> InitiatedAt [has X Y = false] T
+	HappensAt [loses X Y] T
+
+> InitiatedAt [has_job X = true] T
+	HappensAt [finds_job X] T
+
+> InitiatedAt [has_job X = false] T
+	HappensAt [quits_job X] T
+
+> InitiatedAt [location X = vacation] T
+	HoldsAt [rich X = true] T
+	
+
+> HoldsFor [poor X = true] T
+	HoldsFor [has X wallet = false] T1
+	HoldsFor [has_job X = false] T2
+	Intersect_All [T1 T2] T
+
+
+> HoldsFor [mood X = happy] T
+	HoldsFor [rich X = true] T1
+	HoldsFor [location X = pub] T2
+	Union_All [T1 T2] T
+
+> HoldsFor [mood X = sad] T
+	HoldsFor [poor X = true] T1
+	HoldsFor [location X = work] T2
+	Union_All [T1 T2] T
+
+> HoldsFor [friends X Y = true] T
+	HoldsFor [location X = work] W1
+	HoldsFor [location Y = work] W2
+	HoldsFor [location X = pub] P1
+	HoldsFor [location Y = pub] P2
+	Intersect_All [W1 W2] W
+	Intersect_All [P1 P2] P
+	Union_All [W P] T
+
+

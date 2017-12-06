@@ -1,0 +1,14 @@
+> InitiatedAt [rich X = true] T
+    HappensAt [win_lottery X] T
+
+> TerminatedAt [rich X = true] T
+    HappensAt [lose_wallet X] T
+
+> InitiatedAt [loc X = Y] T
+    HappensAt [go_to X Y] T
+
+> HoldsFor [happy X = true] I
+    HoldsFor [rich X = true] I1
+    HoldsFor [loc X = pub] I2
+    Union_All [I1 I2] I
+

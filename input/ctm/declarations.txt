@@ -1,0 +1,108 @@
+
+InstantEvents {
+    Input: [stop_enter 4]
+    Input: [stop_leave 4]
+    Input: [internal_temperature_change 3]
+    Input: [noise_level_change 3]
+    Input: [passenger_density_change 3]
+
+    Output: [punctuality_change 3]
+}
+
+Fluents {
+    Simple: [punctuality 2 = punctual]
+    Simple: [punctuality 2 = non_punctual]
+
+    Simple: [passenger_density 2 = low]
+    Simple: [passenger_density 2 = high]
+
+    Simple: [noise_level 2 = low]
+    Simple: [noise_level 2 = high]
+
+    Simple: [internal_temperature 2 = very_warm]
+    Simple: [internal_temperature 2 = very_cold]
+    Simple: [internal_temperature 2 = cold]
+    Simple: [internal_temperature 2 = warm]
+    Simple: [internal_temperature 2 = normal]
+
+    InputSD: [abrupt_acceleration 2 = abrupt]
+    InputSD: [abrupt_acceleration 2 = very_abrupt]
+
+    InputSD: [abrupt_deceleration 2 = abrupt]
+    InputSD: [abrupt_deceleration 2 = very_abrupt]
+
+    InputSD: [sharp_turn 2 = sharp]
+    InputSD: [sharp_turn 2 = very_sharp]
+
+    OutputSD: [driving_style 2 = unsafe]
+    OutputSD: [driving_style 2 = uncomfortable]
+
+    OutputSD: [driving_quality 2 = high]
+    OutputSD: [driving_quality 2 = medium]
+    OutputSD: [driving_quality 2 = low]
+
+    OutputSD: [passenger_comfort 2 = reducing]
+
+    OutputSD: [driver_comfort 2 = reducing]
+
+    OutputSD: [passenger_satisfaction 2 = reducing]
+}
+
+InputEntities {
+    Stop 4:
+        [stop_enter]
+        [stop_leave]
+
+    Temperature 3:
+        [internal_temperature_change]
+
+    Noise 3:
+        [noise_level_change]
+
+    PassengerDensity 3:
+        [passenger_density_change]
+
+    VehicleInput 2:
+        [abrupt_acceleration = abrupt]
+        [abrupt_acceleration = very_abrupt]
+        [abrupt_deceleration = abrupt]
+        [abrupt_deceleration = very_abrupt]
+        [sharp_turn = sharp]
+        [sharp_turn = very_sharp]
+}
+
+BuiltEntities {
+    Vehicle 2:
+        [VehicleInput()]
+        [Temperature(0,2)]
+        [Noise(0,2)]
+        [PassengerDensity(0,2)]
+
+    PunctualityChange 3:
+        [Vehicle() (punctual,non_punctual)]
+
+}
+
+CachingOrder {
+    [punctuality 2 = punctual]             -> Vehicle
+    [punctuality 2 = non_punctual]         -> Vehicle
+    [punctuality_change 3]                 -> PunctualityChange
+    [passenger_density 2 = high]           -> Vehicle
+    [passenger_density 2 = low]            -> Vehicle
+    [noise_level 2 = high]                 -> Vehicle
+    [noise_level 2 = low]                  -> Vehicle
+    [internal_temperature 2 = normal]      -> Vehicle
+    [internal_temperature 2 = warm]        -> Vehicle
+    [internal_temperature 2 = cold]        -> Vehicle
+    [internal_temperature 2 = very_warm]   -> Vehicle
+    [internal_temperature 2 = very_cold]   -> Vehicle
+    [driving_style 2 = unsafe]             -> Vehicle
+    [driving_style 2 = uncomfortable]      -> Vehicle
+    [driving_quality 2 = high]             -> Vehicle
+    [driving_quality 2 = medium]           -> Vehicle
+    [driving_quality 2 = low]              -> Vehicle
+    [passenger_comfort 2 = reducing]       -> Vehicle
+    [driver_comfort 2 = reducing]          -> Vehicle
+    [passenger_satisfaction 2 = reducing]  -> Vehicle
+}
+

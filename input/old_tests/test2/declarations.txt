@@ -1,0 +1,102 @@
+Entities {
+    PersonLocation 2:
+        Input:
+            (go_to 2)
+
+        Custom:
+
+    Person 1:
+        Input:
+            (win_lottery 1)
+            (finds_job 1)
+
+        Custom:
+            (PersonLocation[0])
+
+    PersonItem 2:
+        Input:
+            (loses 2)
+
+        Custom:
+
+    PersonPair 2:
+        Input:
+
+        Custom:
+            (Person[0] Person[0])
+}
+
+InstantEvents {
+    go_to 2:
+        EntityId = PersonLocation
+        Source = Input
+
+    win_lottery 1:
+        EntityId = Person
+        Source = Input
+
+    finds_job 1:
+        EntityId = Person
+        Source = Input
+
+    quits_job 1:
+        EntityId = Person
+        Source = Output
+
+    buys 2:
+        EntityId = PersonItem
+        Source = Output
+
+    loses 2:
+        EntityId = PersonItem
+        Source = Input
+}
+
+Fluents {
+    location 1:
+        EntityId = Person
+        SimpleValues = {home, pub, work, vacation}
+
+    rich 1:
+        EntityId = Person
+        SimpleValues = {true, false}
+
+    has 2:
+        EntityId = PersonItem
+        SimpleValues = {true, false}
+
+    has_job 1:
+        EntityId = Person
+        SimpleValues = {true, false}
+
+    mood 1:
+        EntityId = Person
+        SDOutputValues = {happy, sad}
+
+    friends 2:
+        EntityId = PersonPair
+        SDOutputValues = {true}
+
+    poor 1:
+        EntityId = Person
+        SDOutputValues = {true}
+}
+
+CachingOrder {
+	go_to 2
+	location 1
+	win_lottery 1
+	rich 1
+	finds_job 1
+	buys 2
+	quits_job 1
+	loses 2
+	has 2
+	has_job 1
+	poor 1
+	mood 1
+	friends 2
+}
+	
+	
+	

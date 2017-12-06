@@ -1,0 +1,21 @@
+> HoldsFor [union foo = true] T
+    HoldsFor [union1 foo = true] T1
+    HoldsFor [union2 foo = true] T2
+    HoldsFor [union3 foo = true] T3
+    HoldsFor [union4 foo = true] T4
+    Union_All [T1 T2 T3 T4] T
+
+> HoldsFor [intersect foo = true] T
+    HoldsFor [intersect1 foo = true] T1
+    HoldsFor [intersect2 foo = true] T2
+    HoldsFor [intersect3 foo = true] T3
+    HoldsFor [intersect4 foo = true] T4
+    Intersect_All [T1 T2 T3 T4] T
+
+> HoldsFor [relative_complement foo = true] T
+    HoldsFor [relative_complement1 foo = true] Base
+    HoldsFor [relative_complement2 foo = true] Ex2
+    HoldsFor [relative_complement3 foo = true] Ex3
+    HoldsFor [relative_complement4 foo = true] Ex4
+    Relative_Complement_All Base [Ex2 Ex3 Ex4] T
+

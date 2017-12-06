@@ -1,0 +1,76 @@
+InstantEvents {
+    Input: [appear 1]
+    Input: [disappear 1]
+}
+Fluents {
+    Simple: [person 1 = true]
+    Simple: [person 1 = false]
+    Simple: [leaving_object 2 = true]
+    Simple: [leaving_object 2 = false]
+    Simple: [meeting 2 = true]
+    Simple: [meeting 2 = false]
+
+    InputSD: [walking 1 = true]
+    InputSD: [active 1 = true]
+    InputSD: [inactive 1 = true]
+    InputSD: [running 1 = true]
+    InputSD: [abrupt 1 = true]
+    InputSD: [distance 3 = true]
+
+    OutputSD: [close 3 = true]
+    OutputSD: [close 3 = false]
+    OutputSD: [closeSymmetric 3 = true]
+    OutputSD: [activeOrInactivePerson 1 = true]
+    OutputSD: [greeting1 2 = true]
+    OutputSD: [greeting2 2 = true]
+    OutputSD: [moving 2 = true]
+    OutputSD: [fighting 2 = true]
+}
+
+InputEntities {
+    Id 1:
+        [appear]
+        [disappear]
+        [walking = true]
+        [active = true]
+        [inactive = true]
+        [running = true]
+        [abrupt = true]
+
+    Distance 3:
+        [distance = true]
+
+}
+
+BuiltEntities {
+    IdPair 2:
+        [Distance(0,2)]
+
+    BothWaysPair 2:
+        [IdPair()]
+        [IdPair(1) IdPair(0)]
+
+    CloseEntity 3:
+        [IdPair() (24,25,30,34)]
+
+    CloseSymmetricEntity 3:
+        [IdPair() (30)]
+
+}
+
+CachingOrder {
+    [close 3 = true]                    -> CloseEntity
+    [close 3 = false]                   -> CloseEntity
+    [closeSymmetric 3 = true]           -> CloseSymmetricEntity
+    [person 1 = true]                   -> Id
+    [person 1 = false]                   -> Id
+    [activeOrInactivePerson 1 = true]   -> Id
+    [greeting1 2 = true]                -> IdPair
+    [greeting2 2 = true]                -> IdPair
+    [leaving_object 2 = true]           -> BothWaysPair
+    [leaving_object 2 = false]          -> BothWaysPair
+    [meeting 2 = true]                  -> IdPair
+    [meeting 2 = false]                 -> IdPair
+    [moving 2 = true]                   -> IdPair
+    [fighting 2 = true]                 -> IdPair
+}

@@ -1,0 +1,7 @@
+HappensAt [go_to chris home] 21
+
+HoldsFor [loc chris] work=(10-18) pub=(18-22) home=(22-inf)
+HoldsFor [rich chris] true=(14-20)
+HoldsFor [happy chris] true=(14-22)
+
+

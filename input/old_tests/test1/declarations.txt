@@ -1,0 +1,54 @@
+Entities {
+    InputPerson 1:
+        Input:
+            (lose_wallet 1)
+            (win_lottery 1)
+
+        Custom:
+
+    InputGoTo 2:
+        Input:
+            (go_to 2)
+
+        Custom:
+
+    Person 1:
+        Input:
+
+        Custom:
+           (InputPerson[0])
+           (InputGoTo[0])
+
+}
+
+InstantEvents {
+    go_to 2:
+        EntityId = InputGoTo
+        Source = Input
+    lose_wallet 1:
+        EntityId = Person
+        Source = Input
+    win_lottery 1:
+        EntityId = Person
+        Source = Input
+}
+
+Fluents {
+    loc 1:
+        EntityId = Person
+        SimpleValues = {home, pub, work}
+
+    rich 1:
+        EntityId = Person
+        SimpleValues = {true}
+
+    happy 1:
+        EntityId = Person
+        SDOutputValues = {true}
+}
+
+CachingOrder {
+    loc 1
+    rich 1
+    happy 1
+}

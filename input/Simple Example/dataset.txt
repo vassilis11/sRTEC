@@ -1,0 +1,30 @@
+HappensAt [goes_to tim home] 1
+HoldsFor [sleeping tim = true] (1-8)
+HappensAt [leaves tim home] 8
+HappensAt [goes_to tim work] 9
+HoldsFor [listens_to_music tim = true] (10-12)
+HoldsFor [talking tim paul = true] (14-16)
+HappensAt [leaves tim job] 18
+HappensAt [goes_to tim bar] 19
+HoldsFor [talking mary tim = true] (20-22)
+HappensAt [leaves tim bar] 22
+HappensAt [goes_to tim home] 23
+HoldsFor  [sleeping tim = true] (24-30)
+HappensAt [leaves tim home] 31
+HappensAt [goes_to tim work] 32
+HoldsFor [talking george tim = true] (33-37)
+HoldsFor [raining_upon tim = true] (35-47)
+HappensAt [leaves tim work] 40
+HappensAt [goes_to tim bar] 42
+HoldsFor [talking tim jack = true] (42-45)
+HappensAt [leaves tim bar] 45
+HappensAt [goes_to tim home] 48
+HoldsFor [sleeping tim = true] (48-52)
+HappensAt [leaves tim home] 52
+HappensAt [goes_to tim work] 53
+HoldsFor [sleeping tim = true] (56-58)
+HoldsFor [talking tim george = true] (60-63)
+HappensAt [leaves tim work] 65
+HappensAt [goes_to tim home] 67
+HoldsFor [sleeping tim = true] (70-80)
+

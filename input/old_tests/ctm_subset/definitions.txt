@@ -1,0 +1,79 @@
+> HappensAt [punctuality_change X Z punctual] T
+    HappensAt End [punctuality X Z = non_punctual] T
+
+> HappensAt [punctuality_change X Z non_punctual] T
+    HappensAt End [punctuality X Z = punctual] T
+
+> InitiatedAt [noise_level X Z = Y] T
+    HappensAt [noise_level_change X Z Y] T
+
+> InitiatedAt [internal_temperature X Z = Y] T
+    HappensAt [internal_temperature_change X Z Y] T
+
+> InitiatedAt [passenger_density X Z = Y] T
+    HappensAt [passenger_density_change X Z Y] T
+
+> InitiatedAt [punctuality X Z = punctual] T
+    HappensAt [stop_enter X Z Y scheduled] T
+
+> InitiatedAt [punctuality X Z = punctual] T
+    HappensAt [stop_enter X Z Y early] T
+
+> InitiatedAt [punctuality X Z = non_punctual] T
+    HappensAt [stop_enter X Z Y late] T
+
+> InitiatedAt [punctuality X Z = non_punctual] T
+    HappensAt [stop_leave X Z Y early] T
+
+> HoldsFor [driving_quality Id VehicleType = low] LQDI
+	HoldsFor [punctuality Id VehicleType = non_punctual] NPI
+	HoldsFor [driving_style Id VehicleType = unsafe] USI
+	Union_All [NPI USI] LQDI
+
+> HoldsFor [driving_quality Id VehicleType = medium] MQDI
+	HoldsFor [punctuality Id VehicleType = punctual] PunctualI
+	HoldsFor [driving_style Id VehicleType = uncomfortable] UCI
+	Intersect_All [PunctualI UCI] MQDI
+
+> HoldsFor [driving_quality Id VehicleType = high] HQDI
+	HoldsFor [punctuality Id VehicleType = punctual] PunctualI
+	HoldsFor [driving_style Id VehicleType = unsafe] USI
+	HoldsFor [driving_style Id VehicleType = uncomfortable] UCI
+	Relative_Complement_All PunctualI [USI UCI] HQDI
+
+> HoldsFor [passenger_satisfaction Id VehicleType = reducing] RPSI
+	HoldsFor [punctuality Id VehicleType = non_punctual] NPI
+	HoldsFor [passenger_comfort Id VehicleType = reducing] RPCI
+	Union_All [NPI RPCI] RPSI
+
+> HoldsFor [driving_style Id VehicleType = unsafe] UDI
+	HoldsFor [sharp_turn Id VehicleType = very_sharp] VSTI
+	HoldsFor [abrupt_acceleration Id VehicleType = very_abrupt] VAAI
+	HoldsFor [abrupt_deceleration Id VehicleType = very_abrupt] VADI
+	Union_All [VSTI VAAI VADI] UDI
+
+> HoldsFor [driving_style Id VehicleType = uncomfortable] UDI
+	HoldsFor [sharp_turn Id VehicleType = sharp] STI
+	HoldsFor [abrupt_acceleration Id VehicleType = very_abrupt] VAAI
+	HoldsFor [abrupt_deceleration Id VehicleType = very_abrupt] VADI
+	Relative_Complement_All STI [VAAI VADI] PureSharpTurn
+	HoldsFor [abrupt_acceleration Id VehicleType = abrupt] AAI
+	HoldsFor [abrupt_deceleration Id VehicleType = abrupt] ADI
+	Union_All [PureSharpTurn AAI ADI] UDI
+
+> HoldsFor [passenger_comfort Id VehicleType = reducing] RPCI
+	HoldsFor [driving_style Id VehicleType = uncomfortable] UCI
+	HoldsFor [driving_style Id VehicleType = unsafe] USI
+	HoldsFor [passenger_density Id VehicleType = high] HPDI
+	HoldsFor [noise_level Id VehicleType = high] HNLI
+	HoldsFor [internal_temperature Id VehicleType = very_warm] VWITI
+	HoldsFor [internal_temperature Id VehicleType = very_cold] VCITI
+	Union_All [UCI USI HPDI HNLI VWITI VCITI] RPCI
+
+> HoldsFor [driver_comfort Id VehicleType = reducing] RPCI
+	HoldsFor [driving_style Id VehicleType = uncomfortable] UCI
+	HoldsFor [driving_style Id VehicleType = unsafe] USI
+	HoldsFor [noise_level Id VehicleType = high] HNLI
+	HoldsFor [internal_temperature Id VehicleType = very_warm] VWITI
+	HoldsFor [internal_temperature Id VehicleType = very_cold] VCITI
+	Union_All [UCI USI HNLI VWITI VCITI] RPCI

@@ -1,0 +1,1000 @@
+HoldsFor [abrupt_acceleration 75 bus = abrupt] (3-5)
+HoldsFor [abrupt_acceleration 75 bus = abrupt] (10-13)
+HoldsFor [abrupt_acceleration 76 bus = abrupt] (19-23)
+HoldsFor [abrupt_acceleration 77 bus = abrupt] (28-33)
+HoldsFor [abrupt_acceleration 78 bus = very_abrupt] (34-36)
+HoldsFor [abrupt_acceleration 79 bus = abrupt] (43-47)
+HoldsFor [abrupt_acceleration 79 bus = very_abrupt] (50-52)
+HoldsFor [abrupt_acceleration 80 bus = very_abrupt] (63-65)
+HoldsFor [abrupt_acceleration 81 bus = very_abrupt] (67-73)
+HoldsFor [abrupt_acceleration 82 bus = very_abrupt] (77-81)
+HoldsFor [abrupt_acceleration 83 bus = abrupt] (83-86)
+HoldsFor [abrupt_acceleration 83 bus = abrupt] (90-94)
+HoldsFor [abrupt_acceleration 84 bus = abrupt] (99-105)
+HoldsFor [abrupt_acceleration 85 bus = abrupt] (106-113)
+HoldsFor [abrupt_acceleration 86 bus = very_abrupt] (118-120)
+HoldsFor [abrupt_acceleration 87 bus = very_abrupt] (123-126)
+HoldsFor [abrupt_acceleration 87 bus = very_abrupt] (135-137)
+HoldsFor [abrupt_acceleration 88 bus = abrupt] (140-145)
+HoldsFor [abrupt_acceleration 89 bus = very_abrupt] (150-153)
+HoldsFor [abrupt_acceleration 90 bus = very_abrupt] (156-160)
+HoldsFor [abrupt_acceleration 91 bus = abrupt] (167-169)
+HoldsFor [abrupt_acceleration 91 bus = abrupt] (171-177)
+HoldsFor [abrupt_acceleration 92 bus = very_abrupt] (181-184)
+HoldsFor [abrupt_acceleration 93 bus = abrupt] (186-190)
+HoldsFor [abrupt_acceleration 94 bus = very_abrupt] (196-199)
+HoldsFor [abrupt_acceleration 95 bus = abrupt] (202-209)
+HoldsFor [abrupt_acceleration 95 bus = very_abrupt] (210-212)
+HoldsFor [abrupt_acceleration 96 bus = abrupt] (218-220)
+HoldsFor [abrupt_acceleration 97 bus = very_abrupt] (229-232)
+HoldsFor [abrupt_acceleration 98 bus = abrupt] (235-241)
+HoldsFor [abrupt_acceleration 99 bus = abrupt] (244-247)
+HoldsFor [abrupt_acceleration 99 bus = very_abrupt] (255-257)
+HoldsFor [abrupt_acceleration 100 bus = very_abrupt] (263-265)
+HoldsFor [abrupt_acceleration 101 bus = abrupt] (266-272)
+HoldsFor [abrupt_acceleration 102 bus = abrupt] (274-277)
+HoldsFor [abrupt_acceleration 103 bus = very_abrupt] (284-286)
+HoldsFor [abrupt_acceleration 103 bus = very_abrupt] (290-297)
+HoldsFor [abrupt_acceleration 104 bus = abrupt] (301-304)
+HoldsFor [abrupt_acceleration 105 bus = abrupt] (309-312)
+HoldsFor [abrupt_acceleration 106 bus = abrupt] (314-319)
+HoldsFor [abrupt_acceleration 107 bus = abrupt] (324-328)
+HoldsFor [abrupt_acceleration 107 bus = abrupt] (330-335)
+HoldsFor [abrupt_acceleration 108 bus = abrupt] (340-345)
+HoldsFor [abrupt_acceleration 109 bus = very_abrupt] (348-352)
+HoldsFor [abrupt_acceleration 110 bus = abrupt] (356-359)
+HoldsFor [abrupt_acceleration 111 bus = very_abrupt] (365-369)
+HoldsFor [abrupt_acceleration 111 bus = abrupt] (371-377)
+HoldsFor [abrupt_acceleration 112 bus = abrupt] (379-381)
+HoldsFor [abrupt_acceleration 113 bus = abrupt] (386-390)
+HoldsFor [abrupt_acceleration 114 bus = very_abrupt] (397-400)
+HoldsFor [abrupt_acceleration 115 bus = very_abrupt] (405-409)
+HoldsFor [abrupt_acceleration 115 bus = abrupt] (412-414)
+HoldsFor [abrupt_acceleration 116 bus = abrupt] (421-425)
+HoldsFor [abrupt_acceleration 117 bus = very_abrupt] (427-433)
+HoldsFor [abrupt_acceleration 118 bus = very_abrupt] (438-441)
+HoldsFor [abrupt_acceleration 119 bus = very_abrupt] (442-447)
+HoldsFor [abrupt_acceleration 119 bus = very_abrupt] (451-456)
+HoldsFor [abrupt_acceleration 120 bus = very_abrupt] (462-464)
+HoldsFor [abrupt_acceleration 121 bus = abrupt] (467-470)
+HoldsFor [abrupt_acceleration 122 bus = abrupt] (474-477)
+HoldsFor [abrupt_acceleration 123 bus = abrupt] (482-487)
+HoldsFor [abrupt_acceleration 123 bus = very_abrupt] (494-496)
+HoldsFor [abrupt_acceleration 124 bus = very_abrupt] (501-505)
+HoldsFor [abrupt_acceleration 125 bus = very_abrupt] (508-512)
+HoldsFor [abrupt_acceleration 126 bus = very_abrupt] (516-520)
+HoldsFor [abrupt_acceleration 127 bus = abrupt] (523-526)
+HoldsFor [abrupt_acceleration 127 bus = abrupt] (534-536)
+HoldsFor [abrupt_acceleration 128 bus = very_abrupt] (541-544)
+HoldsFor [abrupt_acceleration 129 bus = very_abrupt] (546-551)
+HoldsFor [abrupt_acceleration 130 bus = abrupt] (554-560)
+HoldsFor [abrupt_acceleration 131 bus = very_abrupt] (563-569)
+HoldsFor [abrupt_acceleration 131 bus = very_abrupt] (571-576)
+HoldsFor [abrupt_acceleration 132 bus = abrupt] (579-585)
+HoldsFor [abrupt_acceleration 133 bus = abrupt] (587-590)
+HoldsFor [abrupt_acceleration 134 bus = abrupt] (596-599)
+HoldsFor [abrupt_acceleration 135 bus = abrupt] (602-604)
+HoldsFor [abrupt_acceleration 135 bus = abrupt] (611-614)
+HoldsFor [abrupt_acceleration 136 bus = abrupt] (619-623)
+HoldsFor [abrupt_acceleration 137 bus = very_abrupt] (628-630)
+HoldsFor [abrupt_acceleration 138 bus = abrupt] (634-636)
+HoldsFor [abrupt_acceleration 139 bus = abrupt] (644-647)
+HoldsFor [abrupt_acceleration 139 bus = very_abrupt] (652-655)
+HoldsFor [abrupt_acceleration 140 bus = very_abrupt] (660-665)
+HoldsFor [abrupt_acceleration 141 bus = very_abrupt] (667-671)
+HoldsFor [abrupt_acceleration 142 bus = abrupt] (674-678)
+HoldsFor [abrupt_acceleration 143 bus = abrupt] (685-689)
+HoldsFor [abrupt_acceleration 143 bus = abrupt] (691-697)
+HoldsFor [abrupt_acceleration 144 bus = abrupt] (699-702)
+HoldsFor [abrupt_acceleration 145 bus = abrupt] (706-709)
+HoldsFor [abrupt_acceleration 146 bus = abrupt] (717-721)
+HoldsFor [abrupt_acceleration 147 bus = very_abrupt] (725-729)
+HoldsFor [abrupt_acceleration 147 bus = very_abrupt] (733-735)
+HoldsFor [abrupt_acceleration 148 bus = abrupt] (739-743)
+HoldsFor [abrupt_acceleration 149 bus = abrupt] (749-752)
+HoldsFor [abrupt_acceleration 150 bus = abrupt] (756-758)
+HoldsFor [abrupt_acceleration 151 bus = very_abrupt] (763-765)
+HoldsFor [abrupt_acceleration 151 bus = very_abrupt] (774-776)
+HoldsFor [abrupt_acceleration 152 bus = very_abrupt] (779-781)
+HoldsFor [abrupt_acceleration 153 bus = abrupt] (786-791)
+HoldsFor [abrupt_acceleration 154 bus = very_abrupt] (794-799)
+HoldsFor [abrupt_acceleration 155 bus = abrupt] (802-804)
+HoldsFor [abrupt_acceleration 155 bus = abrupt] (811-815)
+HoldsFor [abrupt_acceleration 156 bus = very_abrupt] (822-825)
+HoldsFor [abrupt_acceleration 157 bus = very_abrupt] (829-833)
+HoldsFor [abrupt_acceleration 158 bus = abrupt] (834-839)
+HoldsFor [abrupt_acceleration 159 bus = very_abrupt] (842-844)
+HoldsFor [abrupt_acceleration 159 bus = abrupt] (851-855)
+HoldsFor [abrupt_acceleration 160 bus = very_abrupt] (860-865)
+HoldsFor [abrupt_acceleration 161 bus = abrupt] (867-873)
+HoldsFor [abrupt_acceleration 162 bus = abrupt] (879-881)
+HoldsFor [abrupt_acceleration 163 bus = abrupt] (883-885)
+HoldsFor [abrupt_acceleration 163 bus = very_abrupt] (892-895)
+HoldsFor [abrupt_acceleration 164 bus = very_abrupt] (900-903)
+HoldsFor [abrupt_acceleration 165 bus = abrupt] (906-908)
+HoldsFor [abrupt_acceleration 166 bus = abrupt] (914-916)
+HoldsFor [abrupt_acceleration 167 bus = abrupt] (926-928)
+HoldsFor [abrupt_acceleration 167 bus = very_abrupt] (931-936)
+HoldsFor [abrupt_acceleration 168 bus = abrupt] (941-943)
+HoldsFor [abrupt_acceleration 169 bus = abrupt] (951-953)
+HoldsFor [abrupt_acceleration 170 bus = very_abrupt] (956-960)
+HoldsFor [abrupt_acceleration 171 bus = abrupt] (963-966)
+HoldsFor [abrupt_acceleration 171 bus = abrupt] (970-975)
+HoldsFor [abrupt_acceleration 172 bus = abrupt] (978-980)
+HoldsFor [abrupt_acceleration 173 bus = very_abrupt] (991-993)
+HoldsFor [abrupt_acceleration 174 bus = very_abrupt] (994-999)
+HoldsFor [abrupt_deceleration 75 bus = very_abrupt] (3-5)
+HoldsFor [abrupt_deceleration 75 bus = abrupt] (10-17)
+HoldsFor [abrupt_deceleration 76 bus = abrupt] (18-23)
+HoldsFor [abrupt_deceleration 77 bus = abrupt] (26-31)
+HoldsFor [abrupt_deceleration 78 bus = abrupt] (34-39)
+HoldsFor [abrupt_deceleration 79 bus = abrupt] (44-48)
+HoldsFor [abrupt_deceleration 79 bus = abrupt] (51-53)
+HoldsFor [abrupt_deceleration 80 bus = very_abrupt] (63-65)
+HoldsFor [abrupt_deceleration 81 bus = very_abrupt] (66-71)
+HoldsFor [abrupt_deceleration 82 bus = abrupt] (76-81)
+HoldsFor [abrupt_deceleration 83 bus = abrupt] (83-89)
+HoldsFor [abrupt_deceleration 83 bus = very_abrupt] (92-94)
+HoldsFor [abrupt_deceleration 84 bus = very_abrupt] (101-103)
+HoldsFor [abrupt_deceleration 85 bus = very_abrupt] (106-108)
+HoldsFor [abrupt_deceleration 86 bus = very_abrupt] (115-119)
+HoldsFor [abrupt_deceleration 87 bus = abrupt] (124-129)
+HoldsFor [abrupt_deceleration 87 bus = abrupt] (132-134)
+HoldsFor [abrupt_deceleration 88 bus = abrupt] (140-144)
+HoldsFor [abrupt_deceleration 89 bus = abrupt] (149-151)
+HoldsFor [abrupt_deceleration 90 bus = abrupt] (154-159)
+HoldsFor [abrupt_deceleration 91 bus = abrupt] (167-169)
+HoldsFor [abrupt_deceleration 91 bus = very_abrupt] (172-176)
+HoldsFor [abrupt_deceleration 92 bus = abrupt] (180-185)
+HoldsFor [abrupt_deceleration 93 bus = very_abrupt] (190-193)
+HoldsFor [abrupt_deceleration 94 bus = very_abrupt] (196-199)
+HoldsFor [abrupt_deceleration 95 bus = abrupt] (207-209)
+HoldsFor [abrupt_deceleration 95 bus = abrupt] (212-215)
+HoldsFor [abrupt_deceleration 96 bus = abrupt] (219-225)
+HoldsFor [abrupt_deceleration 97 bus = very_abrupt] (227-230)
+HoldsFor [abrupt_deceleration 98 bus = very_abrupt] (239-241)
+HoldsFor [abrupt_deceleration 99 bus = very_abrupt] (244-247)
+HoldsFor [abrupt_deceleration 99 bus = very_abrupt] (254-256)
+HoldsFor [abrupt_deceleration 100 bus = very_abrupt] (259-261)
+HoldsFor [abrupt_deceleration 101 bus = very_abrupt] (269-272)
+HoldsFor [abrupt_deceleration 102 bus = very_abrupt] (275-277)
+HoldsFor [abrupt_deceleration 103 bus = abrupt] (283-288)
+HoldsFor [abrupt_deceleration 103 bus = very_abrupt] (291-297)
+HoldsFor [abrupt_deceleration 104 bus = very_abrupt] (298-304)
+HoldsFor [abrupt_deceleration 105 bus = very_abrupt] (307-312)
+HoldsFor [abrupt_deceleration 106 bus = abrupt] (315-318)
+HoldsFor [abrupt_deceleration 107 bus = abrupt] (322-326)
+HoldsFor [abrupt_deceleration 107 bus = abrupt] (333-335)
+HoldsFor [abrupt_deceleration 108 bus = very_abrupt] (341-343)
+HoldsFor [abrupt_deceleration 109 bus = abrupt] (347-352)
+HoldsFor [abrupt_deceleration 110 bus = very_abrupt] (359-361)
+HoldsFor [abrupt_deceleration 111 bus = very_abrupt] (367-369)
+HoldsFor [abrupt_deceleration 111 bus = abrupt] (372-376)
+HoldsFor [abrupt_deceleration 112 bus = very_abrupt] (382-384)
+HoldsFor [abrupt_deceleration 113 bus = very_abrupt] (390-393)
+HoldsFor [abrupt_deceleration 114 bus = abrupt] (396-401)
+HoldsFor [abrupt_deceleration 115 bus = abrupt] (404-407)
+HoldsFor [abrupt_deceleration 115 bus = very_abrupt] (410-414)
+HoldsFor [abrupt_deceleration 116 bus = very_abrupt] (422-425)
+HoldsFor [abrupt_deceleration 117 bus = very_abrupt] (427-429)
+HoldsFor [abrupt_deceleration 118 bus = very_abrupt] (434-440)
+HoldsFor [abrupt_deceleration 119 bus = very_abrupt] (446-449)
+HoldsFor [abrupt_deceleration 119 bus = abrupt] (451-456)
+HoldsFor [abrupt_deceleration 120 bus = abrupt] (462-464)
+HoldsFor [abrupt_deceleration 121 bus = very_abrupt] (466-473)
+HoldsFor [abrupt_deceleration 122 bus = abrupt] (474-479)
+HoldsFor [abrupt_deceleration 123 bus = very_abrupt] (484-487)
+HoldsFor [abrupt_deceleration 123 bus = abrupt] (490-493)
+HoldsFor [abrupt_deceleration 124 bus = very_abrupt] (502-504)
+HoldsFor [abrupt_deceleration 125 bus = abrupt] (508-511)
+HoldsFor [abrupt_deceleration 126 bus = abrupt] (515-521)
+HoldsFor [abrupt_deceleration 127 bus = abrupt] (525-529)
+HoldsFor [abrupt_deceleration 127 bus = abrupt] (533-535)
+HoldsFor [abrupt_deceleration 128 bus = very_abrupt] (538-545)
+HoldsFor [abrupt_deceleration 129 bus = abrupt] (550-553)
+HoldsFor [abrupt_deceleration 130 bus = abrupt] (554-556)
+HoldsFor [abrupt_deceleration 131 bus = very_abrupt] (567-569)
+HoldsFor [abrupt_deceleration 131 bus = abrupt] (570-575)
+HoldsFor [abrupt_deceleration 132 bus = very_abrupt] (581-583)
+HoldsFor [abrupt_deceleration 133 bus = abrupt] (588-591)
+HoldsFor [abrupt_deceleration 134 bus = very_abrupt] (599-601)
+HoldsFor [abrupt_deceleration 135 bus = very_abrupt] (602-609)
+HoldsFor [abrupt_deceleration 135 bus = very_abrupt] (610-612)
+HoldsFor [abrupt_deceleration 136 bus = abrupt] (621-625)
+HoldsFor [abrupt_deceleration 137 bus = abrupt] (627-630)
+HoldsFor [abrupt_deceleration 138 bus = abrupt] (639-641)
+HoldsFor [abrupt_deceleration 139 bus = abrupt] (644-647)
+HoldsFor [abrupt_deceleration 139 bus = very_abrupt] (651-654)
+HoldsFor [abrupt_deceleration 140 bus = very_abrupt] (659-662)
+HoldsFor [abrupt_deceleration 141 bus = abrupt] (667-672)
+HoldsFor [abrupt_deceleration 142 bus = very_abrupt] (676-679)
+HoldsFor [abrupt_deceleration 143 bus = abrupt] (685-689)
+HoldsFor [abrupt_deceleration 143 bus = abrupt] (690-697)
+HoldsFor [abrupt_deceleration 144 bus = abrupt] (703-705)
+HoldsFor [abrupt_deceleration 145 bus = very_abrupt] (711-713)
+HoldsFor [abrupt_deceleration 146 bus = very_abrupt] (714-718)
+HoldsFor [abrupt_deceleration 147 bus = abrupt] (724-728)
+HoldsFor [abrupt_deceleration 147 bus = abrupt] (731-733)
+HoldsFor [abrupt_deceleration 148 bus = abrupt] (740-744)
+HoldsFor [abrupt_deceleration 149 bus = abrupt] (746-752)
+HoldsFor [abrupt_deceleration 150 bus = abrupt] (756-758)
+HoldsFor [abrupt_deceleration 151 bus = very_abrupt] (764-768)
+HoldsFor [abrupt_deceleration 151 bus = very_abrupt] (770-776)
+HoldsFor [abrupt_deceleration 152 bus = very_abrupt] (780-784)
+HoldsFor [abrupt_deceleration 153 bus = very_abrupt] (790-793)
+HoldsFor [abrupt_deceleration 154 bus = very_abrupt] (794-800)
+HoldsFor [abrupt_deceleration 155 bus = abrupt] (803-806)
+HoldsFor [abrupt_deceleration 155 bus = abrupt] (813-815)
+HoldsFor [abrupt_deceleration 156 bus = very_abrupt] (818-820)
+HoldsFor [abrupt_deceleration 157 bus = abrupt] (826-829)
+HoldsFor [abrupt_deceleration 158 bus = abrupt] (838-841)
+HoldsFor [abrupt_deceleration 159 bus = abrupt] (843-845)
+HoldsFor [abrupt_deceleration 159 bus = very_abrupt] (851-856)
+HoldsFor [abrupt_deceleration 160 bus = very_abrupt] (863-865)
+HoldsFor [abrupt_deceleration 161 bus = very_abrupt] (871-873)
+HoldsFor [abrupt_deceleration 162 bus = very_abrupt] (876-878)
+HoldsFor [abrupt_deceleration 163 bus = abrupt] (883-886)
+HoldsFor [abrupt_deceleration 163 bus = very_abrupt] (894-896)
+HoldsFor [abrupt_deceleration 164 bus = abrupt] (900-903)
+HoldsFor [abrupt_deceleration 165 bus = abrupt] (910-913)
+HoldsFor [abrupt_deceleration 166 bus = very_abrupt] (915-917)
+HoldsFor [abrupt_deceleration 167 bus = abrupt] (922-928)
+HoldsFor [abrupt_deceleration 167 bus = abrupt] (931-935)
+HoldsFor [abrupt_deceleration 168 bus = abrupt] (941-944)
+HoldsFor [abrupt_deceleration 169 bus = very_abrupt] (951-953)
+HoldsFor [abrupt_deceleration 170 bus = abrupt] (954-956)
+HoldsFor [abrupt_deceleration 171 bus = very_abrupt] (963-965)
+HoldsFor [abrupt_deceleration 171 bus = abrupt] (970-975)
+HoldsFor [abrupt_deceleration 172 bus = abrupt] (979-985)
+HoldsFor [abrupt_deceleration 173 bus = very_abrupt] (989-992)
+HoldsFor [abrupt_deceleration 174 bus = very_abrupt] (994-999)
+HappensAt [internal_temperature_change 75 bus warm] 4
+HappensAt [internal_temperature_change 75 bus cold] 17
+HappensAt [internal_temperature_change 76 bus normal] 18
+HappensAt [internal_temperature_change 77 bus very_warm] 28
+HappensAt [internal_temperature_change 78 bus very_warm] 40
+HappensAt [internal_temperature_change 79 bus normal] 44
+HappensAt [internal_temperature_change 79 bus very_warm] 57
+HappensAt [internal_temperature_change 80 bus warm] 64
+HappensAt [internal_temperature_change 81 bus normal] 73
+HappensAt [internal_temperature_change 82 bus cold] 76
+HappensAt [internal_temperature_change 83 bus warm] 85
+HappensAt [internal_temperature_change 83 bus very_cold] 95
+HappensAt [internal_temperature_change 84 bus warm] 102
+HappensAt [internal_temperature_change 85 bus very_warm] 112
+HappensAt [internal_temperature_change 86 bus very_warm] 116
+HappensAt [internal_temperature_change 87 bus very_cold] 123
+HappensAt [internal_temperature_change 87 bus very_cold] 135
+HappensAt [internal_temperature_change 88 bus very_warm] 141
+HappensAt [internal_temperature_change 89 bus very_warm] 153
+HappensAt [internal_temperature_change 90 bus very_warm] 154
+HappensAt [internal_temperature_change 91 bus cold] 164
+HappensAt [internal_temperature_change 91 bus very_cold] 170
+HappensAt [internal_temperature_change 92 bus cold] 178
+HappensAt [internal_temperature_change 93 bus very_cold] 191
+HappensAt [internal_temperature_change 94 bus cold] 197
+HappensAt [internal_temperature_change 95 bus warm] 203
+HappensAt [internal_temperature_change 95 bus warm] 215
+HappensAt [internal_temperature_change 96 bus normal] 219
+HappensAt [internal_temperature_change 97 bus very_cold] 228
+HappensAt [internal_temperature_change 98 bus very_warm] 239
+HappensAt [internal_temperature_change 99 bus warm] 249
+HappensAt [internal_temperature_change 99 bus very_cold] 252
+HappensAt [internal_temperature_change 100 bus very_cold] 258
+HappensAt [internal_temperature_change 101 bus very_cold] 270
+HappensAt [internal_temperature_change 102 bus very_warm] 278
+HappensAt [internal_temperature_change 103 bus very_warm] 282
+HappensAt [internal_temperature_change 103 bus very_warm] 297
+HappensAt [internal_temperature_change 104 bus warm] 305
+HappensAt [internal_temperature_change 105 bus cold] 308
+HappensAt [internal_temperature_change 106 bus cold] 315
+HappensAt [internal_temperature_change 107 bus warm] 327
+HappensAt [internal_temperature_change 107 bus very_warm] 333
+HappensAt [internal_temperature_change 108 bus very_cold] 342
+HappensAt [internal_temperature_change 109 bus very_cold] 347
+HappensAt [internal_temperature_change 110 bus cold] 356
+HappensAt [internal_temperature_change 111 bus warm] 364
+HappensAt [internal_temperature_change 111 bus very_cold] 373
+HappensAt [internal_temperature_change 112 bus cold] 382
+HappensAt [internal_temperature_change 113 bus very_warm] 392
+HappensAt [internal_temperature_change 114 bus normal] 395
+HappensAt [internal_temperature_change 115 bus normal] 403
+HappensAt [internal_temperature_change 115 bus cold] 413
+HappensAt [internal_temperature_change 116 bus normal] 419
+HappensAt [internal_temperature_change 117 bus cold] 432
+HappensAt [internal_temperature_change 118 bus very_warm] 440
+HappensAt [internal_temperature_change 119 bus very_warm] 442
+HappensAt [internal_temperature_change 119 bus normal] 452
+HappensAt [internal_temperature_change 120 bus very_cold] 462
+HappensAt [internal_temperature_change 121 bus warm] 468
+HappensAt [internal_temperature_change 122 bus very_cold] 480
+HappensAt [internal_temperature_change 123 bus very_warm] 484
+HappensAt [internal_temperature_change 123 bus very_cold] 495
+HappensAt [internal_temperature_change 124 bus very_warm] 498
+HappensAt [internal_temperature_change 125 bus cold] 508
+HappensAt [internal_temperature_change 126 bus very_cold] 520
+HappensAt [internal_temperature_change 127 bus warm] 529
+HappensAt [internal_temperature_change 127 bus warm] 536
+HappensAt [internal_temperature_change 128 bus very_cold] 539
+HappensAt [internal_temperature_change 129 bus very_cold] 546
+HappensAt [internal_temperature_change 130 bus very_cold] 557
+HappensAt [internal_temperature_change 131 bus very_cold] 567
+HappensAt [internal_temperature_change 131 bus very_cold] 574
+HappensAt [internal_temperature_change 132 bus cold] 585
+HappensAt [internal_temperature_change 133 bus very_warm] 593
+HappensAt [internal_temperature_change 134 bus very_warm] 599
+HappensAt [internal_temperature_change 135 bus normal] 603
+HappensAt [internal_temperature_change 135 bus warm] 610
+HappensAt [internal_temperature_change 136 bus cold] 622
+HappensAt [internal_temperature_change 137 bus very_warm] 628
+HappensAt [internal_temperature_change 138 bus warm] 638
+HappensAt [internal_temperature_change 139 bus warm] 649
+HappensAt [internal_temperature_change 139 bus very_warm] 655
+HappensAt [internal_temperature_change 140 bus very_warm] 664
+HappensAt [internal_temperature_change 141 bus very_cold] 668
+HappensAt [internal_temperature_change 142 bus warm] 681
+HappensAt [internal_temperature_change 143 bus warm] 685
+HappensAt [internal_temperature_change 143 bus very_cold] 693
+HappensAt [internal_temperature_change 144 bus normal] 702
+HappensAt [internal_temperature_change 145 bus warm] 706
+HappensAt [internal_temperature_change 146 bus cold] 714
+HappensAt [internal_temperature_change 147 bus cold] 723
+HappensAt [internal_temperature_change 147 bus cold] 732
+HappensAt [internal_temperature_change 148 bus normal] 739
+HappensAt [internal_temperature_change 149 bus warm] 753
+HappensAt [internal_temperature_change 150 bus very_warm] 755
+HappensAt [internal_temperature_change 151 bus very_cold] 769
+HappensAt [internal_temperature_change 151 bus normal] 770
+HappensAt [internal_temperature_change 152 bus cold] 781
+HappensAt [internal_temperature_change 153 bus warm] 792
+HappensAt [internal_temperature_change 154 bus cold] 799
+HappensAt [internal_temperature_change 155 bus warm] 803
+HappensAt [internal_temperature_change 155 bus normal] 811
+HappensAt [internal_temperature_change 156 bus normal] 818
+HappensAt [internal_temperature_change 157 bus very_warm] 827
+HappensAt [internal_temperature_change 158 bus warm] 838
+HappensAt [internal_temperature_change 159 bus warm] 845
+HappensAt [internal_temperature_change 159 bus warm] 852
+HappensAt [internal_temperature_change 160 bus normal] 865
+HappensAt [internal_temperature_change 161 bus warm] 868
+HappensAt [internal_temperature_change 162 bus very_warm] 875
+HappensAt [internal_temperature_change 163 bus very_cold] 882
+HappensAt [internal_temperature_change 163 bus very_cold] 893
+HappensAt [internal_temperature_change 164 bus cold] 902
+HappensAt [internal_temperature_change 165 bus very_cold] 910
+HappensAt [internal_temperature_change 166 bus warm] 916
+HappensAt [internal_temperature_change 167 bus normal] 926
+HappensAt [internal_temperature_change 167 bus normal] 935
+HappensAt [internal_temperature_change 168 bus cold] 944
+HappensAt [internal_temperature_change 169 bus warm] 949
+HappensAt [internal_temperature_change 170 bus normal] 954
+HappensAt [internal_temperature_change 171 bus very_cold] 968
+HappensAt [internal_temperature_change 171 bus normal] 973
+HappensAt [internal_temperature_change 172 bus very_warm] 983
+HappensAt [internal_temperature_change 173 bus cold] 986
+HappensAt [internal_temperature_change 174 bus cold] 995
+HappensAt [noise_level_change 75 bus high] 4
+HappensAt [noise_level_change 75 bus high] 10
+HappensAt [noise_level_change 76 bus low] 21
+HappensAt [noise_level_change 77 bus low] 32
+HappensAt [noise_level_change 78 bus low] 34
+HappensAt [noise_level_change 79 bus low] 49
+HappensAt [noise_level_change 79 bus high] 57
+HappensAt [noise_level_change 80 bus low] 61
+HappensAt [noise_level_change 81 bus low] 69
+HappensAt [noise_level_change 82 bus high] 74
+HappensAt [noise_level_change 83 bus low] 88
+HappensAt [noise_level_change 83 bus high] 95
+HappensAt [noise_level_change 84 bus high] 104
+HappensAt [noise_level_change 85 bus high] 112
+HappensAt [noise_level_change 86 bus low] 115
+HappensAt [noise_level_change 87 bus low] 124
+HappensAt [noise_level_change 87 bus low] 137
+HappensAt [noise_level_change 88 bus high] 142
+HappensAt [noise_level_change 89 bus low] 149
+HappensAt [noise_level_change 90 bus high] 157
+HappensAt [noise_level_change 91 bus high] 163
+HappensAt [noise_level_change 91 bus low] 175
+HappensAt [noise_level_change 92 bus high] 185
+HappensAt [noise_level_change 93 bus high] 188
+HappensAt [noise_level_change 94 bus low] 195
+HappensAt [noise_level_change 95 bus low] 203
+HappensAt [noise_level_change 95 bus low] 214
+HappensAt [noise_level_change 96 bus high] 223
+HappensAt [noise_level_change 97 bus high] 231
+HappensAt [noise_level_change 98 bus high] 241
+HappensAt [noise_level_change 99 bus low] 244
+HappensAt [noise_level_change 99 bus high] 253
+HappensAt [noise_level_change 100 bus high] 260
+HappensAt [noise_level_change 101 bus low] 272
+HappensAt [noise_level_change 102 bus high] 279
+HappensAt [noise_level_change 103 bus high] 284
+HappensAt [noise_level_change 103 bus high] 291
+HappensAt [noise_level_change 104 bus low] 302
+HappensAt [noise_level_change 105 bus low] 308
+HappensAt [noise_level_change 106 bus low] 315
+HappensAt [noise_level_change 107 bus high] 329
+HappensAt [noise_level_change 107 bus low] 336
+HappensAt [noise_level_change 108 bus high] 340
+HappensAt [noise_level_change 109 bus high] 347
+HappensAt [noise_level_change 110 bus high] 356
+HappensAt [noise_level_change 111 bus low] 364
+HappensAt [noise_level_change 111 bus low] 372
+HappensAt [noise_level_change 112 bus low] 384
+HappensAt [noise_level_change 113 bus high] 386
+HappensAt [noise_level_change 114 bus high] 401
+HappensAt [noise_level_change 115 bus high] 402
+HappensAt [noise_level_change 115 bus high] 411
+HappensAt [noise_level_change 116 bus low] 423
+HappensAt [noise_level_change 117 bus low] 433
+HappensAt [noise_level_change 118 bus high] 440
+HappensAt [noise_level_change 119 bus low] 444
+HappensAt [noise_level_change 119 bus high] 452
+HappensAt [noise_level_change 120 bus high] 458
+HappensAt [noise_level_change 121 bus low] 468
+HappensAt [noise_level_change 122 bus high] 479
+HappensAt [noise_level_change 123 bus high] 486
+HappensAt [noise_level_change 123 bus high] 496
+HappensAt [noise_level_change 124 bus high] 505
+HappensAt [noise_level_change 125 bus low] 509
+HappensAt [noise_level_change 126 bus high] 518
+HappensAt [noise_level_change 127 bus high] 529
+HappensAt [noise_level_change 127 bus high] 530
+HappensAt [noise_level_change 128 bus high] 538
+HappensAt [noise_level_change 129 bus low] 551
+HappensAt [noise_level_change 130 bus low] 558
+HappensAt [noise_level_change 131 bus high] 566
+HappensAt [noise_level_change 131 bus high] 573
+HappensAt [noise_level_change 132 bus high] 585
+HappensAt [noise_level_change 133 bus low] 587
+HappensAt [noise_level_change 134 bus low] 597
+HappensAt [noise_level_change 135 bus low] 606
+HappensAt [noise_level_change 135 bus low] 611
+HappensAt [noise_level_change 136 bus high] 619
+HappensAt [noise_level_change 137 bus high] 633
+HappensAt [noise_level_change 138 bus high] 641
+HappensAt [noise_level_change 139 bus high] 642
+HappensAt [noise_level_change 139 bus high] 652
+HappensAt [noise_level_change 140 bus low] 661
+HappensAt [noise_level_change 141 bus low] 669
+HappensAt [noise_level_change 142 bus low] 679
+HappensAt [noise_level_change 143 bus high] 684
+HappensAt [noise_level_change 143 bus low] 690
+HappensAt [noise_level_change 144 bus low] 699
+HappensAt [noise_level_change 145 bus low] 708
+HappensAt [noise_level_change 146 bus low] 715
+HappensAt [noise_level_change 147 bus high] 728
+HappensAt [noise_level_change 147 bus low] 735
+HappensAt [noise_level_change 148 bus high] 745
+HappensAt [noise_level_change 149 bus high] 746
+HappensAt [noise_level_change 150 bus low] 754
+HappensAt [noise_level_change 151 bus low] 766
+HappensAt [noise_level_change 151 bus low] 772
+HappensAt [noise_level_change 152 bus low] 783
+HappensAt [noise_level_change 153 bus high] 790
+HappensAt [noise_level_change 154 bus low] 795
+HappensAt [noise_level_change 155 bus low] 806
+HappensAt [noise_level_change 155 bus low] 812
+HappensAt [noise_level_change 156 bus low] 821
+HappensAt [noise_level_change 157 bus high] 833
+HappensAt [noise_level_change 158 bus high] 840
+HappensAt [noise_level_change 159 bus high] 849
+HappensAt [noise_level_change 159 bus low] 851
+HappensAt [noise_level_change 160 bus low] 863
+HappensAt [noise_level_change 161 bus high] 870
+HappensAt [noise_level_change 162 bus low] 879
+HappensAt [noise_level_change 163 bus low] 889
+HappensAt [noise_level_change 163 bus high] 897
+HappensAt [noise_level_change 164 bus high] 904
+HappensAt [noise_level_change 165 bus low] 909
+HappensAt [noise_level_change 166 bus low] 918
+HappensAt [noise_level_change 167 bus high] 927
+HappensAt [noise_level_change 167 bus low] 932
+HappensAt [noise_level_change 168 bus high] 944
+HappensAt [noise_level_change 169 bus high] 946
+HappensAt [noise_level_change 170 bus high] 960
+HappensAt [noise_level_change 171 bus low] 969
+HappensAt [noise_level_change 171 bus low] 974
+HappensAt [noise_level_change 172 bus low] 983
+HappensAt [noise_level_change 173 bus low] 990
+HappensAt [noise_level_change 174 bus high] 998
+HappensAt [passenger_density_change 75 bus high] 7
+HappensAt [passenger_density_change 75 bus high] 16
+HappensAt [passenger_density_change 76 bus high] 23
+HappensAt [passenger_density_change 77 bus high] 26
+HappensAt [passenger_density_change 78 bus low] 35
+HappensAt [passenger_density_change 79 bus low] 42
+HappensAt [passenger_density_change 79 bus low] 53
+HappensAt [passenger_density_change 80 bus low] 61
+HappensAt [passenger_density_change 81 bus low] 69
+HappensAt [passenger_density_change 82 bus low] 75
+HappensAt [passenger_density_change 83 bus low] 84
+HappensAt [passenger_density_change 83 bus low] 94
+HappensAt [passenger_density_change 84 bus high] 102
+HappensAt [passenger_density_change 85 bus high] 106
+HappensAt [passenger_density_change 86 bus high] 120
+HappensAt [passenger_density_change 87 bus high] 122
+HappensAt [passenger_density_change 87 bus high] 130
+HappensAt [passenger_density_change 88 bus high] 144
+HappensAt [passenger_density_change 89 bus high] 146
+HappensAt [passenger_density_change 90 bus low] 156
+HappensAt [passenger_density_change 91 bus low] 165
+HappensAt [passenger_density_change 91 bus high] 171
+HappensAt [passenger_density_change 92 bus high] 182
+HappensAt [passenger_density_change 93 bus low] 189
+HappensAt [passenger_density_change 94 bus low] 195
+HappensAt [passenger_density_change 95 bus high] 205
+HappensAt [passenger_density_change 95 bus low] 212
+HappensAt [passenger_density_change 96 bus high] 222
+HappensAt [passenger_density_change 97 bus low] 231
+HappensAt [passenger_density_change 98 bus high] 234
+HappensAt [passenger_density_change 99 bus high] 249
+HappensAt [passenger_density_change 99 bus high] 256
+HappensAt [passenger_density_change 100 bus low] 258
+HappensAt [passenger_density_change 101 bus high] 266
+HappensAt [passenger_density_change 102 bus high] 278
+HappensAt [passenger_density_change 103 bus low] 289
+HappensAt [passenger_density_change 103 bus low] 293
+HappensAt [passenger_density_change 104 bus low] 300
+HappensAt [passenger_density_change 105 bus low] 312
+HappensAt [passenger_density_change 106 bus low] 316
+HappensAt [passenger_density_change 107 bus high] 328
+HappensAt [passenger_density_change 107 bus high] 334
+HappensAt [passenger_density_change 108 bus low] 344
+HappensAt [passenger_density_change 109 bus high] 347
+HappensAt [passenger_density_change 110 bus high] 354
+HappensAt [passenger_density_change 111 bus high] 363
+HappensAt [passenger_density_change 111 bus low] 370
+HappensAt [passenger_density_change 112 bus low] 380
+HappensAt [passenger_density_change 113 bus low] 389
+HappensAt [passenger_density_change 114 bus low] 397
+HappensAt [passenger_density_change 115 bus low] 404
+HappensAt [passenger_density_change 115 bus high] 414
+HappensAt [passenger_density_change 116 bus high] 424
+HappensAt [passenger_density_change 117 bus high] 426
+HappensAt [passenger_density_change 118 bus low] 436
+HappensAt [passenger_density_change 119 bus low] 444
+HappensAt [passenger_density_change 119 bus low] 451
+HappensAt [passenger_density_change 120 bus low] 463
+HappensAt [passenger_density_change 121 bus high] 466
+HappensAt [passenger_density_change 122 bus low] 478
+HappensAt [passenger_density_change 123 bus low] 484
+HappensAt [passenger_density_change 123 bus high] 494
+HappensAt [passenger_density_change 124 bus low] 504
+HappensAt [passenger_density_change 125 bus high] 511
+HappensAt [passenger_density_change 126 bus low] 514
+HappensAt [passenger_density_change 127 bus high] 528
+HappensAt [passenger_density_change 127 bus high] 537
+HappensAt [passenger_density_change 128 bus low] 544
+HappensAt [passenger_density_change 129 bus low] 548
+HappensAt [passenger_density_change 130 bus low] 557
+HappensAt [passenger_density_change 131 bus low] 565
+HappensAt [passenger_density_change 131 bus low] 573
+HappensAt [passenger_density_change 132 bus low] 582
+HappensAt [passenger_density_change 133 bus high] 586
+HappensAt [passenger_density_change 134 bus low] 601
+HappensAt [passenger_density_change 135 bus low] 603
+HappensAt [passenger_density_change 135 bus low] 613
+HappensAt [passenger_density_change 136 bus low] 620
+HappensAt [passenger_density_change 137 bus low] 630
+HappensAt [passenger_density_change 138 bus high] 636
+HappensAt [passenger_density_change 139 bus low] 646
+HappensAt [passenger_density_change 139 bus low] 654
+HappensAt [passenger_density_change 140 bus low] 665
+HappensAt [passenger_density_change 141 bus high] 668
+HappensAt [passenger_density_change 142 bus high] 678
+HappensAt [passenger_density_change 143 bus high] 688
+HappensAt [passenger_density_change 143 bus high] 690
+HappensAt [passenger_density_change 144 bus low] 705
+HappensAt [passenger_density_change 145 bus high] 708
+HappensAt [passenger_density_change 146 bus low] 721
+HappensAt [passenger_density_change 147 bus low] 725
+HappensAt [passenger_density_change 147 bus high] 733
+HappensAt [passenger_density_change 148 bus low] 738
+HappensAt [passenger_density_change 149 bus low] 748
+HappensAt [passenger_density_change 150 bus low] 757
+HappensAt [passenger_density_change 151 bus high] 765
+HappensAt [passenger_density_change 151 bus low] 772
+HappensAt [passenger_density_change 152 bus low] 780
+HappensAt [passenger_density_change 153 bus low] 787
+HappensAt [passenger_density_change 154 bus low] 799
+HappensAt [passenger_density_change 155 bus low] 806
+HappensAt [passenger_density_change 155 bus low] 812
+HappensAt [passenger_density_change 156 bus low] 821
+HappensAt [passenger_density_change 157 bus low] 829
+HappensAt [passenger_density_change 158 bus high] 836
+HappensAt [passenger_density_change 159 bus low] 845
+HappensAt [passenger_density_change 159 bus low] 857
+HappensAt [passenger_density_change 160 bus low] 863
+HappensAt [passenger_density_change 161 bus high] 872
+HappensAt [passenger_density_change 162 bus high] 874
+HappensAt [passenger_density_change 163 bus high] 883
+HappensAt [passenger_density_change 163 bus high] 895
+HappensAt [passenger_density_change 164 bus high] 904
+HappensAt [passenger_density_change 165 bus high] 908
+HappensAt [passenger_density_change 166 bus high] 917
+HappensAt [passenger_density_change 167 bus high] 922
+HappensAt [passenger_density_change 167 bus low] 937
+HappensAt [passenger_density_change 168 bus low] 945
+HappensAt [passenger_density_change 169 bus low] 946
+HappensAt [passenger_density_change 170 bus high] 960
+HappensAt [passenger_density_change 171 bus high] 962
+HappensAt [passenger_density_change 171 bus high] 976
+HappensAt [passenger_density_change 172 bus low] 980
+HappensAt [passenger_density_change 173 bus high] 993
+HappensAt [passenger_density_change 174 bus high] 996
+HoldsFor [sharp_turn 75 bus = sharp] (5-8)
+HoldsFor [sharp_turn 75 bus = very_sharp] (14-16)
+HoldsFor [sharp_turn 76 bus = very_sharp] (19-24)
+HoldsFor [sharp_turn 77 bus = sharp] (31-33)
+HoldsFor [sharp_turn 78 bus = very_sharp] (38-40)
+HoldsFor [sharp_turn 79 bus = sharp] (47-49)
+HoldsFor [sharp_turn 79 bus = very_sharp] (52-57)
+HoldsFor [sharp_turn 80 bus = sharp] (61-63)
+HoldsFor [sharp_turn 81 bus = sharp] (66-68)
+HoldsFor [sharp_turn 82 bus = very_sharp] (75-80)
+HoldsFor [sharp_turn 83 bus = sharp] (82-88)
+HoldsFor [sharp_turn 83 bus = sharp] (90-92)
+HoldsFor [sharp_turn 84 bus = very_sharp] (101-104)
+HoldsFor [sharp_turn 85 bus = sharp] (107-112)
+HoldsFor [sharp_turn 86 bus = sharp] (117-121)
+HoldsFor [sharp_turn 87 bus = sharp] (124-129)
+HoldsFor [sharp_turn 87 bus = sharp] (132-136)
+HoldsFor [sharp_turn 88 bus = sharp] (141-145)
+HoldsFor [sharp_turn 89 bus = sharp] (149-152)
+HoldsFor [sharp_turn 90 bus = sharp] (156-159)
+HoldsFor [sharp_turn 91 bus = sharp] (167-169)
+HoldsFor [sharp_turn 91 bus = very_sharp] (173-176)
+HoldsFor [sharp_turn 92 bus = sharp] (183-185)
+HoldsFor [sharp_turn 93 bus = very_sharp] (190-192)
+HoldsFor [sharp_turn 94 bus = very_sharp] (196-201)
+HoldsFor [sharp_turn 95 bus = sharp] (206-209)
+HoldsFor [sharp_turn 95 bus = sharp] (213-215)
+HoldsFor [sharp_turn 96 bus = very_sharp] (223-225)
+HoldsFor [sharp_turn 97 bus = very_sharp] (226-231)
+HoldsFor [sharp_turn 98 bus = sharp] (234-239)
+HoldsFor [sharp_turn 99 bus = very_sharp] (243-247)
+HoldsFor [sharp_turn 99 bus = very_sharp] (250-252)
+HoldsFor [sharp_turn 100 bus = very_sharp] (258-260)
+HoldsFor [sharp_turn 101 bus = very_sharp] (267-273)
+HoldsFor [sharp_turn 102 bus = very_sharp] (275-281)
+HoldsFor [sharp_turn 103 bus = very_sharp] (282-288)
+HoldsFor [sharp_turn 103 bus = sharp] (293-295)
+HoldsFor [sharp_turn 104 bus = sharp] (298-304)
+HoldsFor [sharp_turn 105 bus = sharp] (306-312)
+HoldsFor [sharp_turn 106 bus = sharp] (316-321)
+HoldsFor [sharp_turn 107 bus = sharp] (326-329)
+HoldsFor [sharp_turn 107 bus = sharp] (333-337)
+HoldsFor [sharp_turn 108 bus = very_sharp] (338-344)
+HoldsFor [sharp_turn 109 bus = very_sharp] (346-351)
+HoldsFor [sharp_turn 110 bus = very_sharp] (356-358)
+HoldsFor [sharp_turn 111 bus = very_sharp] (362-366)
+HoldsFor [sharp_turn 111 bus = sharp] (375-377)
+HoldsFor [sharp_turn 112 bus = sharp] (378-383)
+HoldsFor [sharp_turn 113 bus = very_sharp] (387-392)
+HoldsFor [sharp_turn 114 bus = very_sharp] (394-396)
+HoldsFor [sharp_turn 115 bus = sharp] (405-409)
+HoldsFor [sharp_turn 115 bus = very_sharp] (415-417)
+HoldsFor [sharp_turn 116 bus = very_sharp] (418-420)
+HoldsFor [sharp_turn 117 bus = sharp] (430-432)
+HoldsFor [sharp_turn 118 bus = sharp] (438-441)
+HoldsFor [sharp_turn 119 bus = sharp] (447-449)
+HoldsFor [sharp_turn 119 bus = sharp] (451-454)
+HoldsFor [sharp_turn 120 bus = very_sharp] (458-463)
+HoldsFor [sharp_turn 121 bus = very_sharp] (467-469)
+HoldsFor [sharp_turn 122 bus = very_sharp] (475-479)
+HoldsFor [sharp_turn 123 bus = very_sharp] (482-485)
+HoldsFor [sharp_turn 123 bus = very_sharp] (494-497)
+HoldsFor [sharp_turn 124 bus = sharp] (502-505)
+HoldsFor [sharp_turn 125 bus = very_sharp] (506-509)
+HoldsFor [sharp_turn 126 bus = very_sharp] (516-518)
+HoldsFor [sharp_turn 127 bus = very_sharp] (522-527)
+HoldsFor [sharp_turn 127 bus = sharp] (532-536)
+HoldsFor [sharp_turn 128 bus = very_sharp] (541-545)
+HoldsFor [sharp_turn 129 bus = sharp] (546-548)
+HoldsFor [sharp_turn 130 bus = sharp] (555-558)
+HoldsFor [sharp_turn 131 bus = sharp] (562-567)
+HoldsFor [sharp_turn 131 bus = sharp] (571-575)
+HoldsFor [sharp_turn 132 bus = very_sharp] (578-582)
+HoldsFor [sharp_turn 133 bus = sharp] (587-591)
+HoldsFor [sharp_turn 134 bus = sharp] (595-600)
+HoldsFor [sharp_turn 135 bus = very_sharp] (602-604)
+HoldsFor [sharp_turn 135 bus = sharp] (610-615)
+HoldsFor [sharp_turn 136 bus = very_sharp] (623-625)
+HoldsFor [sharp_turn 137 bus = very_sharp] (626-628)
+HoldsFor [sharp_turn 138 bus = sharp] (639-641)
+HoldsFor [sharp_turn 139 bus = very_sharp] (643-647)
+HoldsFor [sharp_turn 139 bus = sharp] (655-657)
+HoldsFor [sharp_turn 140 bus = sharp] (662-665)
+HoldsFor [sharp_turn 141 bus = sharp] (667-673)
+HoldsFor [sharp_turn 142 bus = sharp] (674-676)
+HoldsFor [sharp_turn 143 bus = very_sharp] (684-687)
+HoldsFor [sharp_turn 143 bus = very_sharp] (690-697)
+HoldsFor [sharp_turn 144 bus = sharp] (702-705)
+HoldsFor [sharp_turn 145 bus = very_sharp] (711-713)
+HoldsFor [sharp_turn 146 bus = very_sharp] (717-721)
+HoldsFor [sharp_turn 147 bus = sharp] (722-729)
+HoldsFor [sharp_turn 147 bus = sharp] (731-733)
+HoldsFor [sharp_turn 148 bus = sharp] (743-745)
+HoldsFor [sharp_turn 149 bus = sharp] (747-752)
+HoldsFor [sharp_turn 150 bus = sharp] (754-761)
+HoldsFor [sharp_turn 151 bus = very_sharp] (764-767)
+HoldsFor [sharp_turn 151 bus = very_sharp] (770-775)
+HoldsFor [sharp_turn 152 bus = very_sharp] (779-781)
+HoldsFor [sharp_turn 153 bus = sharp] (788-791)
+HoldsFor [sharp_turn 154 bus = sharp] (796-798)
+HoldsFor [sharp_turn 155 bus = sharp] (804-808)
+HoldsFor [sharp_turn 155 bus = very_sharp] (810-817)
+HoldsFor [sharp_turn 156 bus = very_sharp] (822-825)
+HoldsFor [sharp_turn 157 bus = sharp] (826-831)
+HoldsFor [sharp_turn 158 bus = very_sharp] (837-839)
+HoldsFor [sharp_turn 159 bus = sharp] (844-848)
+HoldsFor [sharp_turn 159 bus = sharp] (851-855)
+HoldsFor [sharp_turn 160 bus = very_sharp] (863-865)
+HoldsFor [sharp_turn 161 bus = very_sharp] (871-873)
+HoldsFor [sharp_turn 162 bus = sharp] (879-881)
+HoldsFor [sharp_turn 163 bus = very_sharp] (886-888)
+HoldsFor [sharp_turn 163 bus = very_sharp] (890-892)
+HoldsFor [sharp_turn 164 bus = very_sharp] (898-904)
+HoldsFor [sharp_turn 165 bus = very_sharp] (906-912)
+HoldsFor [sharp_turn 166 bus = sharp] (919-921)
+HoldsFor [sharp_turn 167 bus = very_sharp] (924-926)
+HoldsFor [sharp_turn 167 bus = sharp] (931-934)
+HoldsFor [sharp_turn 168 bus = very_sharp] (940-945)
+HoldsFor [sharp_turn 169 bus = very_sharp] (946-951)
+HoldsFor [sharp_turn 170 bus = very_sharp] (954-958)
+HoldsFor [sharp_turn 171 bus = very_sharp] (963-966)
+HoldsFor [sharp_turn 171 bus = very_sharp] (972-976)
+HoldsFor [sharp_turn 172 bus = sharp] (978-984)
+HoldsFor [sharp_turn 173 bus = sharp] (988-991)
+HoldsFor [sharp_turn 174 bus = sharp] (994-999)
+HappensAt [stop_enter 75 bus 003 early] 2
+HappensAt [stop_leave 75 bus 003 scheduled] 9
+HappensAt [stop_enter 75 bus 0017 early] 14
+HappensAt [stop_leave 75 bus 0017 late] 15
+HappensAt [stop_enter 76 bus 0025 late] 22
+HappensAt [stop_leave 76 bus 0025 scheduled] 23
+HappensAt [stop_enter 77 bus 0031 early] 29
+HappensAt [stop_leave 77 bus 0031 late] 32
+HappensAt [stop_enter 78 bus 0040 scheduled] 40
+HappensAt [stop_leave 78 bus 0040 late] 41
+HappensAt [stop_enter 79 bus 0049 late] 48
+HappensAt [stop_leave 79 bus 0049 scheduled] 49
+HappensAt [stop_enter 79 bus 0056 scheduled] 53
+HappensAt [stop_leave 79 bus 0056 late] 54
+HappensAt [stop_enter 80 bus 0062 early] 59
+HappensAt [stop_leave 80 bus 0062 late] 62
+HappensAt [stop_enter 81 bus 0068 early] 69
+HappensAt [stop_leave 81 bus 0068 late] 73
+HappensAt [stop_enter 82 bus 0074 scheduled] 75
+HappensAt [stop_leave 82 bus 0074 early] 77
+HappensAt [stop_enter 83 bus 0085 early] 82
+HappensAt [stop_leave 83 bus 0085 early] 85
+HappensAt [stop_enter 83 bus 0097 late] 94
+HappensAt [stop_leave 83 bus 0097 early] 95
+HappensAt [stop_enter 84 bus 00105 late] 103
+HappensAt [stop_leave 84 bus 00105 scheduled] 105
+HappensAt [stop_enter 85 bus 00111 early] 111
+HappensAt [stop_leave 85 bus 00111 late] 113
+HappensAt [stop_enter 86 bus 00119 early] 119
+HappensAt [stop_leave 86 bus 00119 scheduled] 121
+HappensAt [stop_enter 87 bus 00128 late] 127
+HappensAt [stop_leave 87 bus 00128 scheduled] 129
+HappensAt [stop_enter 87 bus 00131 early] 131
+HappensAt [stop_leave 87 bus 00131 scheduled] 135
+HappensAt [stop_enter 88 bus 00141 late] 139
+HappensAt [stop_leave 88 bus 00141 early] 142
+HappensAt [stop_enter 89 bus 00146 early] 146
+HappensAt [stop_leave 89 bus 00146 late] 152
+HappensAt [stop_enter 90 bus 00156 late] 160
+HappensAt [stop_leave 90 bus 00156 scheduled] 161
+HappensAt [stop_enter 91 bus 00165 late] 163
+HappensAt [stop_leave 91 bus 00165 late] 166
+HappensAt [stop_enter 91 bus 00173 scheduled] 173
+HappensAt [stop_leave 91 bus 00173 scheduled] 176
+HappensAt [stop_enter 92 bus 00182 late] 182
+HappensAt [stop_leave 92 bus 00182 early] 184
+HappensAt [stop_enter 93 bus 00189 scheduled] 187
+HappensAt [stop_leave 93 bus 00189 late] 190
+HappensAt [stop_enter 94 bus 00196 late] 195
+HappensAt [stop_leave 94 bus 00196 early] 199
+HappensAt [stop_enter 95 bus 00204 scheduled] 208
+HappensAt [stop_leave 95 bus 00204 late] 209
+HappensAt [stop_enter 95 bus 00213 early] 211
+HappensAt [stop_leave 95 bus 00213 early] 213
+HappensAt [stop_enter 96 bus 00218 early] 219
+HappensAt [stop_leave 96 bus 00218 early] 221
+HappensAt [stop_enter 97 bus 00226 scheduled] 226
+HappensAt [stop_leave 97 bus 00226 scheduled] 228
+HappensAt [stop_enter 98 bus 00240 late] 238
+HappensAt [stop_leave 98 bus 00240 scheduled] 241
+HappensAt [stop_enter 99 bus 00249 late] 248
+HappensAt [stop_leave 99 bus 00249 early] 249
+HappensAt [stop_enter 99 bus 00255 late] 252
+HappensAt [stop_leave 99 bus 00255 early] 255
+HappensAt [stop_enter 100 bus 00262 late] 262
+HappensAt [stop_leave 100 bus 00262 early] 264
+HappensAt [stop_enter 101 bus 00270 late] 270
+HappensAt [stop_leave 101 bus 00270 late] 271
+HappensAt [stop_enter 102 bus 00279 scheduled] 276
+HappensAt [stop_leave 102 bus 00279 early] 281
+HappensAt [stop_enter 103 bus 00286 late] 283
+HappensAt [stop_leave 103 bus 00286 late] 286
+HappensAt [stop_enter 103 bus 00290 scheduled] 291
+HappensAt [stop_leave 103 bus 00290 late] 294
+HappensAt [stop_enter 104 bus 00301 early] 298
+HappensAt [stop_leave 104 bus 00301 early] 299
+HappensAt [stop_enter 105 bus 00306 early] 307
+HappensAt [stop_leave 105 bus 00306 early] 310
+HappensAt [stop_enter 106 bus 00316 early] 314
+HappensAt [stop_leave 106 bus 00316 early] 316
+HappensAt [stop_enter 107 bus 00328 scheduled] 325
+HappensAt [stop_leave 107 bus 00328 early] 328
+HappensAt [stop_enter 107 bus 00336 scheduled] 336
+HappensAt [stop_leave 107 bus 00336 early] 337
+HappensAt [stop_enter 108 bus 00338 early] 338
+HappensAt [stop_leave 108 bus 00338 scheduled] 344
+HappensAt [stop_enter 109 bus 00347 scheduled] 347
+HappensAt [stop_leave 109 bus 00347 early] 351
+HappensAt [stop_enter 110 bus 00354 late] 356
+HappensAt [stop_leave 110 bus 00354 scheduled] 359
+HappensAt [stop_enter 111 bus 00369 early] 366
+HappensAt [stop_leave 111 bus 00369 scheduled] 367
+HappensAt [stop_enter 111 bus 00375 early] 376
+HappensAt [stop_leave 111 bus 00375 early] 377
+HappensAt [stop_enter 112 bus 00381 late] 378
+HappensAt [stop_leave 112 bus 00381 early] 380
+HappensAt [stop_enter 113 bus 00392 scheduled] 386
+HappensAt [stop_leave 113 bus 00392 late] 389
+HappensAt [stop_enter 114 bus 00400 early] 394
+HappensAt [stop_leave 114 bus 00400 late] 396
+HappensAt [stop_enter 115 bus 00406 scheduled] 403
+HappensAt [stop_leave 115 bus 00406 scheduled] 407
+HappensAt [stop_enter 115 bus 00415 scheduled] 412
+HappensAt [stop_leave 115 bus 00415 late] 416
+HappensAt [stop_enter 116 bus 00421 late] 418
+HappensAt [stop_leave 116 bus 00421 scheduled] 421
+HappensAt [stop_enter 117 bus 00429 late] 427
+HappensAt [stop_leave 117 bus 00429 early] 430
+HappensAt [stop_enter 118 bus 00434 scheduled] 434
+HappensAt [stop_leave 118 bus 00434 late] 436
+HappensAt [stop_enter 119 bus 00443 early] 448
+HappensAt [stop_leave 119 bus 00443 early] 449
+HappensAt [stop_enter 119 bus 00452 scheduled] 450
+HappensAt [stop_leave 119 bus 00452 late] 452
+HappensAt [stop_enter 120 bus 00458 late] 463
+HappensAt [stop_leave 120 bus 00458 early] 464
+HappensAt [stop_enter 121 bus 00472 late] 469
+HappensAt [stop_leave 121 bus 00472 early] 471
+HappensAt [stop_enter 122 bus 00476 scheduled] 477
+HappensAt [stop_leave 122 bus 00476 early] 481
+HappensAt [stop_enter 123 bus 00484 scheduled] 484
+HappensAt [stop_leave 123 bus 00484 late] 489
+HappensAt [stop_enter 123 bus 00497 late] 490
+HappensAt [stop_leave 123 bus 00497 late] 493
+HappensAt [stop_enter 124 bus 00498 early] 499
+HappensAt [stop_leave 124 bus 00498 scheduled] 503
+HappensAt [stop_enter 125 bus 00513 early] 511
+HappensAt [stop_leave 125 bus 00513 late] 512
+HappensAt [stop_enter 126 bus 00516 scheduled] 520
+HappensAt [stop_leave 126 bus 00516 scheduled] 521
+HappensAt [stop_enter 127 bus 00525 late] 525
+HappensAt [stop_leave 127 bus 00525 late] 528
+HappensAt [stop_enter 127 bus 00535 scheduled] 533
+HappensAt [stop_leave 127 bus 00535 scheduled] 536
+HappensAt [stop_enter 128 bus 00540 early] 540
+HappensAt [stop_leave 128 bus 00540 early] 541
+HappensAt [stop_enter 129 bus 00547 scheduled] 548
+HappensAt [stop_leave 129 bus 00547 scheduled] 551
+HappensAt [stop_enter 130 bus 00558 scheduled] 555
+HappensAt [stop_leave 130 bus 00558 late] 557
+HappensAt [stop_enter 131 bus 00563 scheduled] 563
+HappensAt [stop_leave 131 bus 00563 late] 564
+HappensAt [stop_enter 131 bus 00577 scheduled] 570
+HappensAt [stop_leave 131 bus 00577 scheduled] 571
+HappensAt [stop_enter 132 bus 00578 early] 583
+HappensAt [stop_leave 132 bus 00578 scheduled] 585
+HappensAt [stop_enter 133 bus 00586 early] 591
+HappensAt [stop_leave 133 bus 00586 early] 592
+HappensAt [stop_enter 134 bus 00599 late] 597
+HappensAt [stop_leave 134 bus 00599 late] 601
+HappensAt [stop_enter 135 bus 00609 scheduled] 606
+HappensAt [stop_leave 135 bus 00609 late] 608
+HappensAt [stop_enter 135 bus 00612 early] 611
+HappensAt [stop_leave 135 bus 00612 late] 614
+HappensAt [stop_enter 136 bus 00619 early] 619
+HappensAt [stop_leave 136 bus 00619 late] 622
+HappensAt [stop_enter 137 bus 00628 late] 626
+HappensAt [stop_leave 137 bus 00628 late] 628
+HappensAt [stop_enter 138 bus 00637 late] 636
+HappensAt [stop_leave 138 bus 00637 early] 639
+HappensAt [stop_enter 139 bus 00649 late] 642
+HappensAt [stop_leave 139 bus 00649 scheduled] 645
+HappensAt [stop_enter 139 bus 00650 scheduled] 655
+HappensAt [stop_leave 139 bus 00650 scheduled] 657
+HappensAt [stop_enter 140 bus 00663 early] 663
+HappensAt [stop_leave 140 bus 00663 early] 665
+HappensAt [stop_enter 141 bus 00672 scheduled] 669
+HappensAt [stop_leave 141 bus 00672 scheduled] 673
+HappensAt [stop_enter 142 bus 00677 late] 676
+HappensAt [stop_leave 142 bus 00677 scheduled] 679
+HappensAt [stop_enter 143 bus 00686 late] 684
+HappensAt [stop_leave 143 bus 00686 scheduled] 688
+HappensAt [stop_enter 143 bus 00692 early] 693
+HappensAt [stop_leave 143 bus 00692 late] 695
+HappensAt [stop_enter 144 bus 00699 early] 704
+HappensAt [stop_leave 144 bus 00699 early] 705
+HappensAt [stop_enter 145 bus 00708 early] 706
+HappensAt [stop_leave 145 bus 00708 late] 708
+HappensAt [stop_enter 146 bus 00720 early] 720
+HappensAt [stop_leave 146 bus 00720 late] 721
+HappensAt [stop_enter 147 bus 00727 early] 727
+HappensAt [stop_leave 147 bus 00727 late] 729
+HappensAt [stop_enter 147 bus 00734 early] 732
+HappensAt [stop_leave 147 bus 00734 early] 733
+HappensAt [stop_enter 148 bus 00742 scheduled] 740
+HappensAt [stop_leave 148 bus 00742 scheduled] 744
+HappensAt [stop_enter 149 bus 00748 late] 747
+HappensAt [stop_leave 149 bus 00748 late] 749
+HappensAt [stop_enter 150 bus 00756 late] 757
+HappensAt [stop_leave 150 bus 00756 late] 758
+HappensAt [stop_enter 151 bus 00762 scheduled] 767
+HappensAt [stop_leave 151 bus 00762 late] 768
+HappensAt [stop_enter 151 bus 00770 early] 776
+HappensAt [stop_leave 151 bus 00770 scheduled] 777
+HappensAt [stop_enter 152 bus 00783 late] 781
+HappensAt [stop_leave 152 bus 00783 early] 785
+HappensAt [stop_enter 153 bus 00790 scheduled] 791
+HappensAt [stop_leave 153 bus 00790 early] 793
+HappensAt [stop_enter 154 bus 00794 scheduled] 795
+HappensAt [stop_leave 154 bus 00794 early] 798
+HappensAt [stop_enter 155 bus 00804 early] 805
+HappensAt [stop_leave 155 bus 00804 scheduled] 809
+HappensAt [stop_enter 155 bus 00813 early] 810
+HappensAt [stop_leave 155 bus 00813 early] 813
+HappensAt [stop_enter 156 bus 00819 scheduled] 824
+HappensAt [stop_leave 156 bus 00819 late] 825
+HappensAt [stop_enter 157 bus 00827 early] 832
+HappensAt [stop_leave 157 bus 00827 scheduled] 833
+HappensAt [stop_enter 158 bus 00834 late] 836
+HappensAt [stop_leave 158 bus 00834 late] 838
+HappensAt [stop_enter 159 bus 00842 scheduled] 842
+HappensAt [stop_leave 159 bus 00842 late] 845
+HappensAt [stop_enter 159 bus 00851 early] 852
+HappensAt [stop_leave 159 bus 00851 late] 855
+HappensAt [stop_enter 160 bus 00864 scheduled] 858
+HappensAt [stop_leave 160 bus 00864 early] 860
+HappensAt [stop_enter 161 bus 00872 early] 866
+HappensAt [stop_leave 161 bus 00872 late] 869
+HappensAt [stop_enter 162 bus 00878 scheduled] 875
+HappensAt [stop_leave 162 bus 00878 late] 881
+HappensAt [stop_enter 163 bus 00888 scheduled] 885
+HappensAt [stop_leave 163 bus 00888 late] 889
+HappensAt [stop_enter 163 bus 00891 late] 891
+HappensAt [stop_leave 163 bus 00891 late] 895
+HappensAt [stop_enter 164 bus 00899 late] 899
+HappensAt [stop_leave 164 bus 00899 scheduled] 902
+HappensAt [stop_enter 165 bus 00908 scheduled] 908
+HappensAt [stop_leave 165 bus 00908 early] 910
+HappensAt [stop_enter 166 bus 00915 scheduled] 915
+HappensAt [stop_leave 166 bus 00915 early] 917
+HappensAt [stop_enter 167 bus 00924 early] 924
+HappensAt [stop_leave 167 bus 00924 late] 928
+HappensAt [stop_enter 167 bus 00937 late] 930
+HappensAt [stop_leave 167 bus 00937 late] 932
+HappensAt [stop_enter 168 bus 00939 late] 944
+HappensAt [stop_leave 168 bus 00939 early] 945
+HappensAt [stop_enter 169 bus 00952 late] 952
+HappensAt [stop_leave 169 bus 00952 early] 953
+HappensAt [stop_enter 170 bus 00956 scheduled] 954
+HappensAt [stop_leave 170 bus 00956 scheduled] 956
+HappensAt [stop_enter 171 bus 00968 early] 965
+HappensAt [stop_leave 171 bus 00968 scheduled] 969
+HappensAt [stop_enter 171 bus 00970 early] 975
+HappensAt [stop_leave 171 bus 00970 scheduled] 976
+HappensAt [stop_enter 172 bus 00981 scheduled] 982
+HappensAt [stop_leave 172 bus 00981 early] 985
+HappensAt [stop_enter 173 bus 00992 early] 992
+HappensAt [stop_leave 173 bus 00992 scheduled] 993
+HappensAt [stop_enter 174 bus 00997 early] 996
+HappensAt [stop_leave 174 bus 00997 late] 999
