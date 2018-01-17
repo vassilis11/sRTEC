@@ -63,58 +63,70 @@ object Reasoner {
         var outputWritingTime = List.empty[Double]
         var eventDiscardTIme = List.empty[Double]
         var recognitionTime = List.empty[Double]
+        var inputEvents = List.empty[Int]
+        var outputEvents = List.empty[Int]
 
         while (_windowEnd < end) {
             wcount += 1
-            println(s"\nER: ${_windowEnd} $windowSize")
+            println(s"ER: ${_windowEnd} $windowSize")
+            //fd.append(s"ER: ${_windowEnd} $windowSize")
 
             val t0 = System.nanoTime() / 1000000.0
 
             // Update Input data
             processInput()
+            val inpEvents = _windowDB.countEvents
+            //println(s"Input Events: $inpEvents")
+            inputEvents +:= inpEvents
 
             val t1 = System.nanoTime() / 1000000.0
             inputParsingTIme +:= (t1 - t0)
-            println(s"Input parsing time: ${t1 - t0} ms")
+            //println(s"Input parsing time: ${t1 - t0} ms")
 
             // Calculate all entities given the user defined patterns
             produceEntities()
 
             val t2 = System.nanoTime() / 1000000.0
             entityCalculationTime +:= (t2 - t1)
-            println(s"Entity production time: ${t2 - t1} ms")
+            //println(s"Entity production time: ${t2 - t1} ms")
 
             // Produce and update complex events using the user defined patterns
             processCE()
 
             val t3 = System.nanoTime() / 1000000.0
             CEReasoningTime +:= (t3 - t2)
-            println(s"Recognition time: ${t3 - t2} ms")
+            //println(s"Recognition time: ${t3 - t2} ms")
 
             // Write results for this window
             //println(header + _windowDB.output)
             fd.append(_windowDB.output)
 
-            val t4 = System.nanoTime() / 1000000.0
-            outputWritingTime +:= (t4 - t3)
-            println(s"Writing time: ${t4 - t3} ms")
+            //val t4 = System.nanoTime() / 1000000.0
+            //outputWritingTime +:= (t4 - t3)
+            //println(s"Writing time: ${t4 - t3} ms")
 
             // Keep previous points
             _windowDB.cut(_windowStart + windowStep, _clock) match {
                 case (sdp, sfp) => _sdPreviousPoints = sdp; _sfPreviousPoints = sfp
             }
 
+            val outpEvents = _windowDB.countEvents - inpEvents
+            //println(s"Output Events: $outpEvents")
+            outputEvents +:= outpEvents
 
             // Clear database
             _windowDB.clear()
 
             val t5 = System.nanoTime() / 1000000.0
-            eventDiscardTIme +:= (t5 - t4)
-            println(s"Window cut time: ${t5 - t4} ms")
 
-            val windowRecognitionTime = t5 - t2
+            //eventDiscardTIme +:= (t5 - t4)
+            eventDiscardTIme +:= (t5 - t3)
+            //println(s"Window cut time: ${t5 - t4} ms")
+            //println(s"Window cut time: ${t5 - t3} ms")
+
+            val windowRecognitionTime = t5 - t1
             recognitionTime +:= windowRecognitionTime
-            println(s"Window recognition time: $windowRecognitionTime ms")
+            //println(s"Window recognition time: $windowRecognitionTime ms\n")
 
             // Increment window start point
             _windowStart += windowStep
@@ -124,16 +136,19 @@ object Reasoner {
 
         fd.close()
 
-        println(s"\nAverage entity calculation time: ${entityCalculationTime.init.sum / wcount}")
-        println(s"Average CE reasoning time: ${CEReasoningTime.init.sum / wcount}")
-        println(s"Average event discard time: ${eventDiscardTIme.init.sum / wcount}")
-        println(s"Average recognition time: ${recognitionTime.init.sum / wcount}")
+        println(s"\nAverage input events: ${inputEvents.sum / wcount}")
+        println(s"\nAverage output events: ${outputEvents.sum / wcount}")
+        println(s"\nAverage input parsing time: ${inputParsingTIme.sum / wcount}")
+        println(s"Average entity calculation time: ${entityCalculationTime.sum / wcount}")
+        println(s"Average CE reasoning time: ${CEReasoningTime.sum / wcount}")
+        println(s"Average event discard time: ${eventDiscardTIme.sum / wcount}")
+        println(s"Average recognition time: ${recognitionTime.sum / wcount}")
     }
 
     private def processInput(): Unit = {
         // Process HappensAt input
         val inputHappensAt: Seq[(Data.InstantEventId, Seq[String], Int)] = _input._1
-        val inMemoryHappensAt = inputHappensAt filter {case (_, _, timepoint) =>
+        val inMemoryHappensAt = inputHappensAt.filter {case (_, _, timepoint) =>
             timepoint > _windowStart && timepoint <= _windowEnd
         }
         val formattedHappensAt: Iterable[((Data.InstantEventId, Seq[String]), Set[Int])] = inMemoryHappensAt
@@ -144,7 +159,7 @@ object Reasoner {
 
         // Process HoldsAt input
         val inputHoldsAt: Seq[(Data.FluentId, Seq[String], Int)] = _input._2
-        val inMemoryHoldsAt = inputHoldsAt filter {case (_, _, timepoint) =>
+        val inMemoryHoldsAt = inputHoldsAt.filter {case (_, _, timepoint) =>
             timepoint > _windowStart && timepoint <= _windowEnd
         }
         val formattedHoldsAt: Iterable[((Data.FluentId, Seq[String]), Data.Intervals)] = inMemoryHoldsAt

@@ -190,4 +190,8 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.IEType],
         _iETime.values foreach (_.clear())
         _fluentTime.values foreach (_.clear())
     }
+
+    def countEvents: Int = {
+        _iETime.values.map(_.size).sum + _fluentTime.values.map(_.size).sum
+    }
 }

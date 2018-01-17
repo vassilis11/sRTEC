@@ -4,8 +4,6 @@ object Application extends App {
 
     // Set program parameters
     //Caviar
-
-    /*
     val inputDir = "./input/caviar"
     val outputFile = s"$inputDir/results.txt"
     val windowSize = 1007000
@@ -13,9 +11,9 @@ object Application extends App {
     val start = 0
     val end = 1007001
     val clock = 40
-    */
 
     // CTM
+  /*
     val inputDir = "./input/ctm"
     val outputFile = s"$inputDir/results.txt"
     val windowSize = 50000
@@ -23,6 +21,7 @@ object Application extends App {
     val start = 0
     val end = 50001
     val clock = 1
+    */
 
     //Simple Example
     /*
@@ -35,6 +34,29 @@ object Application extends App {
     val clock = 1
     */
 
+    //Caviar long
+    /*
+    val inputDir = "./input/caviar_long"
+    val outputFile = s"$inputDir/results.txt"
+    val windowSize = 12000000
+    val windowStep =  600000
+    val start = 0
+    val end = 20140001
+    val clock = 40
+    */
+
+    // CTM long
+  /*
+    val inputDir = "./input/ctm_long"
+    val outputFile = s"$inputDir/results.txt"
+    val windowSize = 300000
+    val windowStep =  30000
+    val start = 0
+    val end = 1000001
+    val clock = 1
+  */
+
+    //val executions = 5
     execute()
 
     private def execute(): Unit = {
