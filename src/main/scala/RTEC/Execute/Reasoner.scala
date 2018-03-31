@@ -7,7 +7,6 @@ import RTEC._
 object Reasoner {
 
     // static parameters
-    private var _events: Map[Data.EventId, Data.EventType] = _
     private var _cachingOrder: Seq[Reader.Main.CachingTarget] = _
     private var _predicates: Map[Data.EventId, Seq[Data.Predicate]] = _
     private var _inputEntities: Set[Data.InputEntity] = _
@@ -31,18 +30,13 @@ object Reasoner {
             clock: Int): Unit = {
 
         // Set shared parameters
-        val iEMapping: Map[Data.InstantEventId, Data.IEType] = staticData._1
-            .map {iE =>
-                iE.id -> iE.eventType
-            }(collection.breakOut)
+        val iEMapping: Map[Data.InstantEventId, Data.InstantEvent] = staticData._1
+            .map(iE => iE.id -> iE)(collection.breakOut)
 
-        val fluentMapping: Map[Data.FluentId, Data.FluentType] = staticData._2
-            .map {fluent =>
-                fluent.id -> fluent.eventType
-            }(collection.breakOut)
+        val fluentMapping: Map[Data.FluentId, Data.Fluent] = staticData._2
+            .map(fluent => fluent.id -> fluent)(collection.breakOut)
 
         _windowDB = new EventDB(iEMapping, fluentMapping)
-        _events = iEMapping ++ fluentMapping
         _predicates = staticData._3
         _inputEntities = staticData._4._1
         _builtEntities = staticData._4._2
@@ -171,7 +165,7 @@ object Reasoner {
         // Process HoldsFor input
         val inputHoldsFor: Seq[(Data.FluentId, Seq[String], Data.Intervals)] = _input._3
         val inMemoryHoldsFor = inputHoldsFor filter {
-            case hf @(_, _, intervals) =>
+            case (_, _, intervals) =>
                 intervals.last > _windowStart && intervals.last <= _windowEnd
         }
         val formattedHoldsFor: Iterable[((Data.FluentId, Seq[String]), Data.Intervals)] = inMemoryHoldsFor
@@ -211,7 +205,7 @@ object Reasoner {
             val predicates = _predicates(id)
             val entities = _entities(entityId)
             id match {
-                case iEId: Data.InstantEventId =>
+                case _: Data.InstantEventId =>
                     // Case: Instant Event
                     predicates foreach {
                         case p: Data.IEPredicate =>

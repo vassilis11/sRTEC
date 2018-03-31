@@ -10,17 +10,17 @@ InstantEvents {
 }
 
 Fluents {
-    Simple: [punctuality 2 = punctual]
-    Simple: [punctuality 2 = non_punctual]
+    OutputSimple: [punctuality 2 = punctual]
+    OutputSimple: [punctuality 2 = non_punctual]
 
     Simple: [passenger_density 2 = low]
-    Simple: [passenger_density 2 = high]
+    OutputSimple: [passenger_density 2 = high]
 
     Simple: [noise_level 2 = low]
-    Simple: [noise_level 2 = high]
+    OutputSimple: [noise_level 2 = high]
 
-    Simple: [internal_temperature 2 = very_warm]
-    Simple: [internal_temperature 2 = very_cold]
+    OutputSimple: [internal_temperature 2 = very_warm]
+    OutputSimple: [internal_temperature 2 = very_cold]
     Simple: [internal_temperature 2 = cold]
     Simple: [internal_temperature 2 = warm]
     Simple: [internal_temperature 2 = normal]

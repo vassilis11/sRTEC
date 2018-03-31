@@ -4,8 +4,8 @@ import RTEC._
 
 import scala.collection.mutable
 
-class EventDB(val iEs: Map[Data.InstantEventId, Data.IEType],
-              val fluents: Map[Data.FluentId, Data.FluentType]) extends Serializable {
+class EventDB(val iEs: Map[Data.InstantEventId, Data.InstantEvent],
+              val fluents: Map[Data.FluentId, Data.Fluent]) extends Serializable {
 
     private val _iETime: Map[Data.InstantEventId, mutable.Map[Seq[String], Set[Int]]] = iEs.keys
         .map {ie =>
@@ -43,7 +43,7 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.IEType],
     def output: String = {
         val IEStr = {
             for {
-                ie <- _iETime if iEs(ie._1) == Data.OutputIE
+                ie <- _iETime if iEs(ie._1).isInstanceOf[Data.OutputEvent]
                 data <- ie._2
             }
                 yield s"${ie._1.name}(${data._1.mkString(",")}),[${data._2.mkString(",")}]"
@@ -52,7 +52,7 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.IEType],
 
         val fluentStr = {
             for {
-                fluent <- _fluentTime if fluents(fluent._1) == Data.SimpleFluent || fluents(fluent._1) == Data.OutputSDFluent
+                fluent <- _fluentTime if fluents(fluent._1).isInstanceOf[Data.OutputEvent]
                 data <- fluent._2
             }
                 yield s"${fluent._1.name}(${data._1.mkString(",")})=${fluent._1.value},[${data._2}]"
@@ -159,7 +159,7 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.IEType],
      */
     def cut(threshold: Int, delay: Int): (Map[Data.FluentId, Map[Seq[String], Int]], Map[Data.FluentId, Iterable[((Data.FluentId, Seq[String]), Set[Int])]]) = {
         val sd: Map[Data.FluentId, Map[Seq[String], Int]] =
-            _fluentTime.collect {case (id, data) if fluents(id) != Data.SimpleFluent =>
+            _fluentTime.collect {case (id, data) if fluents(id).isInstanceOf[Data.SDFluent with Data.ComplexEvent] =>
                 val d: Map[Seq[String], Int] = data
                     .mapValues(_.cut(threshold))
                     .collect{case (key, Some(value)) => key -> value}(collection.breakOut)
@@ -168,7 +168,7 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.IEType],
             }
 
         val simple: Map[Data.FluentId, Iterable[((Data.FluentId, Seq[String]), Set[Int])]] =
-            _fluentTime collect {case (id, data) if fluents(id) == Data.SimpleFluent =>
+            _fluentTime collect {case (id, data) if fluents(id).isInstanceOf[Data.SimpleFluent] =>
                 val d = data.view
                     .map {case (k, v) =>
                         val unfinished = v.cut(threshold)

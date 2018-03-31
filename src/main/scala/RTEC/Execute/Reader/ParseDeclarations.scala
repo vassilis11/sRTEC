@@ -9,42 +9,48 @@ object ParseDeclarations extends JavaTokenParsers {
     private def alphanumeric = ident | decimalNumber
 
 
-    private def instantEvent: Parser[Data.InstantEvent] = (("Input" | "Output") <~ ":") ~ ("[" ~> alphanumeric) ~ (decimalNumber <~ "]") ^^ {
-        case ("Input" ~ name ~ noa) =>
-            Data.InstantEvent(Data.InputIE, name, noa.toInt)
-        case ("Output" ~ name ~ noa) =>
-            Data.InstantEvent(Data.OutputIE, name, noa.toInt)
+    private def instantEvent: Parser[Data.InstantEvent] = (("Input" | "Output" | "Internal") <~ ":") ~ ("[" ~> alphanumeric) ~ (decimalNumber <~ "]") ^^ {
+        case ("Input" ~ name ~ arity) =>
+            Data.InputInstantEvent(name, arity.toInt)
+        case ("Internal" ~ name ~ arity) =>
+            Data.ComplexInstantEvent(name, arity.toInt)
+        case ("Output" ~ name ~ arity) =>
+            Data.OutputInstantEvent(name, arity.toInt)
     }
     private def instantEvents: Parser[Set[Data.InstantEvent]] = ("InstantEvents" ~ "{") ~> rep(instantEvent) <~ "}" ^^ {
-        case events => events.toSet
+        _.toSet
     }
 
-    private def fluent: Parser[Data.Fluent] = (("Simple" | "InputSD" | "OutputSD") <~ ":") ~ ("[" ~> alphanumeric) ~ decimalNumber ~ ("=" ~> alphanumeric <~ "]") ^^ {
-        case ("Simple" ~ name ~ noa ~ value) =>
-            Data.Fluent(Data.SimpleFluent, name, noa.toInt, value)
-        case ("InputSD" ~ name ~ noa ~ value) =>
-            Data.Fluent(Data.InputSDFluent, name, noa.toInt, value)
-        case ("OutputSD" ~ name ~ noa ~ value) =>
-            Data.Fluent(Data.OutputSDFluent, name, noa.toInt, value)
+    private def fluent: Parser[Data.Fluent] = (("Simple" | "InputSD" | "OutputSD" | "OutputSimple") <~ ":") ~ ("[" ~> alphanumeric) ~ decimalNumber ~ ("=" ~> alphanumeric <~ "]") ^^ {
+        case ("OutputSimple" ~ name ~ arity ~ value) =>
+            Data.OutputSimpleFluent(name, arity.toInt, value)
+        case ("Simple" ~ name ~ arity ~ value) =>
+            Data.InternalSimpleFluent(name, arity.toInt, value)
+        case ("InputSD" ~ name ~ arity ~ value) =>
+            Data.InputSDFluent(name, arity.toInt, value)
+        case ("SD" ~ name ~ arity ~ value) =>
+            Data.ComplexSDFluent(name, arity.toInt, value)
+        case ("OutputSD" ~ name ~ arity ~ value) =>
+            Data.OutputSDFluent(name, arity.toInt, value)
     }
     private def fluents: Parser[Set[Data.Fluent]] = ("Fluents" ~ "{") ~> rep(fluent) <~ "}" ^^ {
-        case events => events.toSet
+        _.toSet
     }
 
     private def inputEntity: Parser[Data.InputEntity] = ((ident  ~ decimalNumber) <~ ":") ~ rep1("[" ~> ident ~ opt("=" ~> ident) <~ "]") ^^ {
         case (name ~ numOfArgs ~ sources) =>
-            val noa = numOfArgs.toInt
+            val arity = numOfArgs.toInt
             val s = sources map {
                 case (n ~ None) =>
-                    Data.InstantEventId(n, noa)
+                    Data.InstantEventId(n, arity)
                 case (n ~ Some(value)) =>
-                    Data.FluentId(n, noa, value)
+                    Data.FluentId(n, arity, value)
             }
 
-            Data.InputEntity(name, noa, s)
+            Data.InputEntity(name, arity, s)
     }
     private def inputEntities: Parser[Set[Data.InputEntity]] = ("InputEntities" ~ "{") ~> rep(inputEntity) <~ "}" ^^ {
-        case entities => entities.toSet
+        _.toSet
     }
 
     private def builtEntities: Parser[Seq[Data.BuiltEntity]] = ("BuiltEntities" ~ "{") ~> rep(builtEntity) <~ "}"
@@ -66,10 +72,10 @@ object ParseDeclarations extends JavaTokenParsers {
     }
 
     private def eventId: Parser[Data.EventId] = "[" ~> ident ~ decimalNumber ~ opt("=" ~> alphanumeric) <~ "]" ^^ {
-        case (name ~ noa ~ None) =>
-            Data.InstantEventId(name, noa.toInt)
-        case (name ~ noa ~ Some(value)) =>
-            Data.FluentId(name, noa.toInt, value)
+        case (name ~ arity ~ None) =>
+            Data.InstantEventId(name, arity.toInt)
+        case (name ~ arity ~ Some(value)) =>
+            Data.FluentId(name, arity.toInt, value)
     }
     private def cachingItem: Parser[(Data.EventId, String)] = eventId ~ ("->" ~> ident) ^^ {
         case (target ~ entity) => (target, entity)

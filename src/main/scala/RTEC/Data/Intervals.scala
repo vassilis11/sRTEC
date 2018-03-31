@@ -158,17 +158,17 @@ object Intervals {
 }
 
 case class Intervals(t: Vector[(Int, Int)]) {
-    def isEmpty = t.isEmpty
-    def nonEmpty = t.nonEmpty
+    def isEmpty: Boolean = t.isEmpty
+    def nonEmpty: Boolean = t.nonEmpty
 
-    override def toString = {
+    override def toString: String = {
         t.map(interval => s"(${interval._1},${if (interval._2 != -1) interval._2 else "inf"})").mkString(",")
     }
 
     def head: Int = t.head._1
     def last: Int = t.last._2
 
-    def ==(x: Intervals) = x.t == t
+    def ==(x: Intervals): Boolean = x.t == t
 
     // Checks if this is a superset of the given interval
     def contains(x: Intervals): Boolean = {

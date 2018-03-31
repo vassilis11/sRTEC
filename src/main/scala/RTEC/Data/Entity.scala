@@ -2,7 +2,7 @@ package RTEC.Data
 
 import RTEC._
 
-case class InputEntity(name: String, numOfArgs: Int, sources: Iterable[Data.EventId]) {
+final case class InputEntity(name: String, numOfArgs: Int, sources: Iterable[Data.EventId]) {
     // Use the patterns to calculate every possible entity given the input database
     def instances(data: Execute.EventDB): (String, Iterable[Seq[String]]) = {
         val s: Set[Seq[String]] = sources.flatMap(data.getEntities(_))(collection.breakOut)
@@ -12,7 +12,7 @@ case class InputEntity(name: String, numOfArgs: Int, sources: Iterable[Data.Even
 }
 
 
-case class BuiltEntity(name: String, numOfArgs: Int, sources: Iterable[Seq[(Option[String], Seq[String])]]) {
+final case class BuiltEntity(name: String, numOfArgs: Int, sources: Iterable[Seq[(Option[String], Seq[String])]]) {
     def instances(data: Map[String, Iterable[Seq[String]]]): (String, Iterable[Seq[String]]) = {
         val s: Set[Seq[String]] = sources
             .flatMap {_

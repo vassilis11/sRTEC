@@ -9,7 +9,7 @@ object Application extends App {
     val windowSize = 1007000
     val windowStep =  1007000
     val start = 0
-    val end = 1007001
+    val end = 2014001
     val clock = 40
 
     // CTM
@@ -19,7 +19,7 @@ object Application extends App {
     val windowSize = 50000
     val windowStep =  50000
     val start = 0
-    val end = 50001
+    val end = 100001
     val clock = 1
     */
 
@@ -38,10 +38,10 @@ object Application extends App {
     /*
     val inputDir = "./input/caviar_long"
     val outputFile = s"$inputDir/results.txt"
-    val windowSize = 12000000
-    val windowStep =  600000
+    val windowSize = 1007000
+    val windowStep = 1007000
     val start = 0
-    val end = 20140001
+    val end = 2014001
     val clock = 40
     */
 
@@ -49,12 +49,12 @@ object Application extends App {
   /*
     val inputDir = "./input/ctm_long"
     val outputFile = s"$inputDir/results.txt"
-    val windowSize = 300000
-    val windowStep =  30000
+    val windowSize = 50000
+    val windowStep =  50000
     val start = 0
-    val end = 1000001
+    val end = 100001
     val clock = 1
-  */
+    */
 
     //val executions = 5
     execute()

@@ -8,7 +8,7 @@ import scala.util.parsing.combinator.JavaTokenParsers
 
 object ParseDefinitions extends JavaTokenParsers {
 
-    private var _fluents: Iterable[Data.Fluent] = null
+    private var _fluents: Iterable[Data.Fluent] = _
     private def alphanumeric = ident | decimalNumber
 
     private def instantEventEntity: Parser[(Data.InstantEventId, Seq[String])] = "[" ~> ident ~ rep(alphanumeric) <~ "]" ^^ {
@@ -25,7 +25,7 @@ object ParseDefinitions extends JavaTokenParsers {
         case (n1 ~ n2) => (n1.toInt, n2.toInt)
     }
     private def intervals: Parser[String] = "(" ~> rep1(interval) <~ ")" ^^ {
-        case lIntervals => Data.Intervals(lIntervals.toVector).toString
+        lIntervals => Data.Intervals(lIntervals.toVector).toString
     }
 
     private def happensAtFluentStart: Parser[Data.HappensAtFluentStart] = ("HappensAt" ~ "Start") ~> fluentEntity ~ ident  ^^ {
@@ -93,9 +93,7 @@ object ParseDefinitions extends JavaTokenParsers {
             // Check if there is any variable value in here and assign to every possible value
             if (Data.Clause.isVariable(head.id.value)) {
                 val id = Data.FluentId(head.id.name, head.id.numOfArgs, "_")
-                val values = _fluents
-                    .filter(f => (f.eventType == Data.SimpleFluent) && f.id == id)
-                    .map(_.value)
+                val values = _fluents.collect{case f: Data.SimpleFluent if f.id == id => f.value}
 
                 values.map(addition.groundOnValue)(collection.breakOut)
 
@@ -114,9 +112,7 @@ object ParseDefinitions extends JavaTokenParsers {
             val addition = Data.TerminatedAtPredicate(head, body)
             if (Data.Clause.isVariable(head.id.value)) {
                 val id = Data.FluentId(head.id.name, head.id.numOfArgs, "_")
-                val values = _fluents
-                    .filter(f => (f.eventType == Data.SimpleFluent) && f.id == id)
-                    .map(_.value)
+                val values = _fluents.collect{case f: Data.SimpleFluent if f.id == id => f.value}
 
                 values.map(addition.groundOnValue)(collection.breakOut)
 
@@ -138,9 +134,7 @@ object ParseDefinitions extends JavaTokenParsers {
             val addition = Data.HoldsForPredicate(head, body)
             if (Data.Clause.isVariable(head.id.value)) {
                 val id = Data.FluentId(head.id.name, head.id.numOfArgs, "_")
-                val values = _fluents
-                    .filter(f => (f.eventType == Data.OutputSDFluent) && f.id == id)
-                    .map(_.value)
+                val values = _fluents.collect{case f: Data.ComplexSDFluent if f.id == id => f.value}
 
                 values.map(addition.groundOnValue)(collection.breakOut)
 
@@ -150,7 +144,7 @@ object ParseDefinitions extends JavaTokenParsers {
     }
 
     private def all: Parser[Map[Data.EventId, Seq[Data.Predicate]]] = rep(happensAtPredicate | initiatedAtPredicate | terminatedAtPredicate | holdsForPredicate) ^^ {
-        case p => p.flatten.groupBy(_.id)
+        _.flatten.groupBy(_.id)
     }
 
     def get(source: String, fluents: Iterable[Data.Fluent]): Option[Map[Data.EventId, Seq[Data.Predicate]]] = {

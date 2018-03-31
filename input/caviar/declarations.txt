@@ -3,11 +3,11 @@ InstantEvents {
     Input: [disappear 1]
 }
 Fluents {
-    Simple: [person 1 = true]
+    OutputSimple: [person 1 = true]
     Simple: [person 1 = false]
-    Simple: [leaving_object 2 = true]
+    OutputSimple: [leaving_object 2 = true]
     Simple: [leaving_object 2 = false]
-    Simple: [meeting 2 = true]
+    OutputSimple: [meeting 2 = true]
     Simple: [meeting 2 = false]
 
     InputSD: [walking 1 = true]
@@ -53,6 +53,9 @@ BuiltEntities {
     CloseEntity 3:
         [IdPair() (24,25,30,34)]
 
+    CloseEntity34 3:
+        [IdPair() (34)]
+
     CloseSymmetricEntity 3:
         [IdPair() (30)]
 
@@ -60,7 +63,7 @@ BuiltEntities {
 
 CachingOrder {
     [close 3 = true]                    -> CloseEntity
-    [close 3 = false]                   -> CloseEntity
+    [close 3 = false]                   -> CloseEntity34
     [closeSymmetric 3 = true]           -> CloseSymmetricEntity
     [person 1 = true]                   -> Id
     [person 1 = false]                   -> Id

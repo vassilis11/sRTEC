@@ -34,7 +34,7 @@ trait BodyClause extends Clause {
 
 case class UnionAll(input: Seq[String], result: String, strict: Boolean)
     extends BodyClause {
-    override val toString = {
+    override val toString: String = {
         s"Union_All ${if (strict) "!" else ""} [${input.mkString(", ")}] $result"
     }
 
@@ -79,7 +79,7 @@ case class UnionAll(input: Seq[String], result: String, strict: Boolean)
 
 case class ComplementAll(input: Seq[String], result: String, strict: Boolean)
     extends BodyClause {
-    override val toString = {
+    override val toString: String = {
         s"Complement_All [${input.mkString(", ")}] $result"
     }
 
@@ -126,7 +126,7 @@ case class ComplementAll(input: Seq[String], result: String, strict: Boolean)
 
 case class IntersectAll(input: Seq[String], result: String, strict: Boolean)
     extends BodyClause {
-    override val toString = {
+    override val toString: String = {
         s"Intersect_All ${if (strict) "!" else ""} [${input.mkString(", ")}] $result"
     }
 
@@ -171,7 +171,7 @@ case class IntersectAll(input: Seq[String], result: String, strict: Boolean)
 
 case class RelativeComplementAll(baseInput: String, excludedInput: Seq[String], result: String, strict: Boolean)
     extends BodyClause {
-    override val toString = {
+    override val toString: String = {
         s"Relative_Complement_All ${if (strict) "!" else ""} $baseInput [${excludedInput.mkString(", ")}] $result"
     }
 
@@ -226,7 +226,7 @@ case class HappensAtIE(id: InstantEventId, entity: Seq[String], time: String)
     with BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"HappensAt [${id.name} ${entity.mkString(" ")}] $time"
     }
 
@@ -279,7 +279,7 @@ case class InitiatedAt(id: FluentId, entity: Seq[String], time: String)
     extends HeadClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"InitiatedAt [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 
@@ -312,7 +312,7 @@ case class TerminatedAt(id: FluentId, entity: Seq[String], time: String)
     extends HeadClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"TerminatedAt [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 
@@ -346,7 +346,7 @@ case class HoldsFor(id: FluentId, entity: Seq[String], time: String, strict: Boo
     with BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"HoldsFor ${if (strict) "!" else ""} [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 
@@ -415,7 +415,7 @@ case class HoldsAt(id: FluentId, entity: Seq[String], time: String)
     extends BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"HoldsAt [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 
@@ -468,7 +468,7 @@ case class HappensAtFluentStart(id: FluentId, entity: Seq[String], time: String)
     extends BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"HappensAt Start [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 
@@ -524,7 +524,7 @@ case class HappensAtFluentEnd(id: FluentId, entity: Seq[String], time: String)
     extends BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"HappensAt End [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 
@@ -580,7 +580,7 @@ case class NotHappensAtIE(id: InstantEventId, entity: Seq[String], time: String)
     extends BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"Not HappensAt [${id.name} ${entity.mkString(" ")}] $time"
     }
 
@@ -626,7 +626,7 @@ case class NotHoldsAt(id: FluentId, entity: Seq[String], time: String)
     extends BodyClause
     with EntityContainer {
 
-    override val toString = {
+    override val toString: String = {
         s"Not HoldsAt [${id.name} ${entity.mkString(" ")} = ${id.value}] $time"
     }
 

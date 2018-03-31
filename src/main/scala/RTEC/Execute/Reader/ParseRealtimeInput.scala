@@ -26,7 +26,7 @@ object ParseRealtimeInput extends JavaTokenParsers {
         case (n1 ~ n2) => (n1.toInt, n2.toInt)
     }
     private def intervals: Parser[Data.Intervals] = "(" ~> rep1(interval) <~ ")" ^^ {
-        case lIntervals => Data.Intervals(lIntervals.toVector)
+        lIntervals => Data.Intervals(lIntervals.toVector)
     }
 
     private def holdsFor: Parser[Unit] = "HoldsFor" ~> fluentEntity ~ intervals ^^ {
@@ -45,8 +45,7 @@ object ParseRealtimeInput extends JavaTokenParsers {
     }
 
     private def all: Parser[(Seq[Main.InputHappensAt], Seq[Main.InputHoldsAt], Seq[Main.InputHoldsFor])] = rep(happensAt | holdsAt | holdsFor) ^^ {
-        case _ =>
-            (_happensAt.reverse, _holdsAt.reverse, _holdsFor.reverse)
+        _ => (_happensAt.reverse, _holdsAt.reverse, _holdsFor.reverse)
     }
 
     def get(source: String): Option[(Seq[Main.InputHappensAt], Seq[Main.InputHoldsAt], Seq[Main.InputHoldsFor])] = {
