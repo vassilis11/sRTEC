@@ -180,7 +180,7 @@ case class Intervals(t: Vector[(Int, Int)]) {
 
     // Checks if this has the given timepoint inside it
     def contains(x: Int): Boolean = {
-        t exists(interval => x >= interval._1 && x < interval._2)
+        t exists(interval => x >= interval._1 && (x < interval._2 || interval._2 == -1))
     }
 
     // Return every starting or ending point of every interval registered ( except infinity if exists)
@@ -224,7 +224,7 @@ case class Intervals(t: Vector[(Int, Int)]) {
     // Check if there is an interval whom this threshold timepoint cuts through and returns the starting point
     def cut(threshold: Int): Option[Int] = {
         t.find{case (start, end) =>
-            start <= threshold && (end > (threshold + 1) || end == -1)
+            start <= threshold && (end > threshold || end == -1)
         } match {
             case Some(p) => Some(p._1)
             case None => None
@@ -235,16 +235,32 @@ case class Intervals(t: Vector[(Int, Int)]) {
     def withLast(newLast: Int): Intervals = Intervals(t.init.:+((t.last._1, newLast)))
 
     // Crop to fit at the given bounds
-    def restrictOn(from: Int, to: Int): Intervals = {
-        var ret = Intervals(t filter {case (start, end) =>
-            start < to && end > from
-        })
-        if (ret.head < from)
-            ret = ret.withHead(from)
-        if (ret.last > to)
-            ret = ret.withLast(-1)
-            //ret = ret.withLast(to)
+    def restrictOn(threshold: Int, clock: Int): Intervals = {
+        val ret = t dropWhile {case (_, end) => end <= threshold}
+        if (ret.head._2 == threshold + clock)
+            Intervals(ret.tail)
+        else if (ret.head._1 <= threshold)
+            Intervals(ret).withHead(threshold + clock)
+        else
+            Intervals(ret)
 
-        ret
     }
+
+    def applyFrame(threshold: Int): Intervals = {
+        t.head match {
+            case (_, end) if end <= threshold && end != -1 =>
+                Intervals(t.tail)
+            case _ =>
+                this
+        }
+    }
+
+    def amalgamate(previous: Int, threshold: Int): Intervals = {
+        val h = t.head._1
+        if (h <= threshold)
+            this.withHead(previous)
+        else
+            Intervals(t.+:(previous, threshold))
+    }
+
 }

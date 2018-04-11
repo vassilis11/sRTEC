@@ -164,9 +164,11 @@ object Reasoner {
 
         // Process HoldsFor input
         val inputHoldsFor: Seq[(Data.FluentId, Seq[String], Data.Intervals)] = _input._3
-        val inMemoryHoldsFor = inputHoldsFor filter {
-            case (_, _, intervals) =>
-                intervals.last > _windowStart && intervals.last <= _windowEnd
+        val inMemoryHoldsFor = inputHoldsFor collect {
+            case hf @(_, _, intervals) if intervals.head > _windowStart && intervals.last <= _windowEnd =>
+                hf
+            case hf @(_, _, intervals) if intervals.last > _windowStart && intervals.last <= _windowEnd =>
+                hf.copy(_3 = intervals.restrictOn(_windowStart, _clock))
         }
         val formattedHoldsFor: Iterable[((Data.FluentId, Seq[String]), Data.Intervals)] = inMemoryHoldsFor
             .groupBy {group =>
@@ -228,12 +230,19 @@ object Reasoner {
                             terminations ++= p.validate(_windowDB, entities)
 
                         case p: Data.SDFPredicate =>
-                            val result = p.validate(_windowDB, entities)
-                            val corrected = result map {
-                                case r@((_, entity), intervals) if sdm.contains(entity) && intervals.nonEmpty =>
-                                    r.copy(_2 = intervals.withHead(sdm(entity)))
+                            val result = p.validate(_windowDB, (entities ++ sdm.keys).toSet)
+                            val corrected = result.map{
+                                case r @(_, intervals) =>
+                                    r.copy(_2 = intervals.applyFrame(_windowStart))
+                            }.collect{
+                                case r @((f,entity), intervals) if sdm.contains(entity) && intervals.nonEmpty =>
+                                    //println(s"$f $entity Window ${_windowStart} - ${_windowEnd} with pending point ${sdm(entity)}: $intervals")
+                                    r.copy(_2 = intervals.amalgamate(sdm(entity), _windowStart + _clock))
 
-                                case r => r
+                                case r @((f,e), intervals) if intervals.nonEmpty =>
+                                    //println(s"$f $e Window ${_windowStart} - ${_windowEnd}: $intervals")
+                                    //r.copy(_2 = intervals.discard(_windowStart + _windowStep))
+                                    r
                             }
                             _windowDB.updateFluent(corrected)
 

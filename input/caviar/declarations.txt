@@ -59,6 +59,8 @@ BuiltEntities {
     CloseSymmetricEntity 3:
         [IdPair() (30)]
 
+    IdProduct 2:
+        [Id() Id()]
 }
 
 CachingOrder {
@@ -71,7 +73,7 @@ CachingOrder {
     [greeting1 2 = true]                -> IdPair
     [greeting2 2 = true]                -> IdPair
     [leaving_object 2 = true]           -> BothWaysPair
-    [leaving_object 2 = false]          -> BothWaysPair
+    [leaving_object 2 = false]          -> IdProduct
     [meeting 2 = true]                  -> IdPair
     [meeting 2 = false]                 -> IdPair
     [moving 2 = true]                   -> IdPair

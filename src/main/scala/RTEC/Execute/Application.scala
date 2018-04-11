@@ -4,24 +4,24 @@ object Application extends App {
 
     // Set program parameters
     //Caviar
+    /*
     val inputDir = "./input/caviar"
     val outputFile = s"$inputDir/results.txt"
-    val windowSize = 1007000
-    val windowStep =  1007000
+    val windowSize = 400000
+    val windowStep = 200000
     val start = 0
     val end = 2014001
     val clock = 40
+    */
 
     // CTM
-  /*
     val inputDir = "./input/ctm"
     val outputFile = s"$inputDir/results.txt"
     val windowSize = 50000
-    val windowStep =  50000
+    val windowStep = 50000
     val start = 0
     val end = 100001
     val clock = 1
-    */
 
     //Simple Example
     /*
@@ -31,28 +31,6 @@ object Application extends App {
     val windowStep = 24
     val start = 0
     val end = 73
-    val clock = 1
-    */
-
-    //Caviar long
-    /*
-    val inputDir = "./input/caviar_long"
-    val outputFile = s"$inputDir/results.txt"
-    val windowSize = 1007000
-    val windowStep = 1007000
-    val start = 0
-    val end = 2014001
-    val clock = 40
-    */
-
-    // CTM long
-  /*
-    val inputDir = "./input/ctm_long"
-    val outputFile = s"$inputDir/results.txt"
-    val windowSize = 50000
-    val windowStep =  50000
-    val start = 0
-    val end = 100001
     val clock = 1
     */
 

@@ -59,7 +59,7 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.InstantEvent],
 
         }.mkString("\n")
 
-        IEStr + "\n" + fluentStr + "\n"
+        IEStr + "\n" + fluentStr + "\n\n"
     }
 
     // Queries the database for the given pattern and returns any possible entity that matches
