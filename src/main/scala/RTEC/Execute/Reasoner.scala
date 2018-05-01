@@ -118,7 +118,7 @@ object Reasoner {
             //println(s"Window cut time: ${t5 - t4} ms")
             //println(s"Window cut time: ${t5 - t3} ms")
 
-            val windowRecognitionTime = t5 - t1
+            val windowRecognitionTime = t5 - t0
             recognitionTime +:= windowRecognitionTime
             //println(s"Window recognition time: $windowRecognitionTime ms\n")
 
@@ -132,11 +132,11 @@ object Reasoner {
 
         println(s"\nAverage input events: ${inputEvents.sum / wcount}")
         println(s"\nAverage output events: ${outputEvents.sum / wcount}")
-        println(s"\nAverage input parsing time: ${inputParsingTIme.sum / wcount}")
-        println(s"Average entity calculation time: ${entityCalculationTime.sum / wcount}")
-        println(s"Average CE reasoning time: ${CEReasoningTime.sum / wcount}")
-        println(s"Average event discard time: ${eventDiscardTIme.sum / wcount}")
-        println(s"Average recognition time: ${recognitionTime.sum / wcount}")
+        println(s"\nAverage input parsing time: ${inputParsingTIme.init.sum / wcount}")
+        println(s"Average entity calculation time: ${entityCalculationTime.init.sum / wcount}")
+        println(s"Average CE reasoning time: ${CEReasoningTime.init.sum / wcount}")
+        println(s"Average event discard time: ${eventDiscardTIme.init.sum / wcount}")
+        println(s"Average recognition time: ${recognitionTime.init.sum / wcount}")
     }
 
     private def processInput(): Unit = {
@@ -160,7 +160,7 @@ object Reasoner {
             .groupBy {group =>
                 (group._1, group._2)
             }
-            .mapValues(v => Data.Intervals.fromPoints(v.map(_._3)(collection.breakOut), _windowEnd, _clock))
+            .mapValues(v => Data.Intervals.fromPoints(v.map(_._3)(collection.breakOut), _windowStart, _windowEnd, _clock))
 
         // Process HoldsFor input
         val inputHoldsFor: Seq[(Data.FluentId, Seq[String], Data.Intervals)] = _input._3

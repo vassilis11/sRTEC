@@ -34,6 +34,7 @@ object Intervals {
         if (all.isEmpty)
             return Intervals.empty
 
+        val open = group.filter(_.nonEmpty).sortWith(_.head < _.head).head.openLeft
         var retval = Vector.empty[(Int, Int)]
         //println(s"Handler.unionIntervals: sorted input = $all")
 
@@ -61,7 +62,7 @@ object Intervals {
         }
 
         //println(s"Handler.unionIntervals: result = ${retval :+ interval}")
-        Intervals(retval :+ interval)
+        Intervals(retval :+ interval, open)
     }
 
     // Calculates the union of the intervals in the given sequence
@@ -99,13 +100,14 @@ object Intervals {
     }
 
     // Take as input a set of discrete timepoints to create a series of intervals
-    def fromPoints(input: Set[Int], limit: Int, clock: Int): Intervals = {
+    def fromPoints(input: Set[Int], start: Int, limit: Int, clock: Int): Intervals = {
         if (input.isEmpty)
             return Intervals.empty
 
         var result = Vector.empty[(Int, Int)]
 
         val sorted = input.toVector.sorted
+        val open = sorted.head == (start + clock)
         var (acc, previous) = (sorted.head, sorted.head)
         val tail = sorted.tail
         tail foreach {n =>
@@ -117,7 +119,7 @@ object Intervals {
         }
         result :+= (acc, previous + clock)
 
-        val ret = Intervals(result)
+        var ret = Intervals(result, open)
         if (ret.last == (limit + clock))
             ret.withLast(-1)
         else
@@ -157,7 +159,7 @@ object Intervals {
     }
 }
 
-case class Intervals(t: Vector[(Int, Int)]) {
+case class Intervals(t: Vector[(Int, Int)], openLeft: Boolean = false) {
     def isEmpty: Boolean = t.isEmpty
     def nonEmpty: Boolean = t.nonEmpty
 
@@ -184,7 +186,12 @@ case class Intervals(t: Vector[(Int, Int)]) {
     }
 
     // Return every starting or ending point of every interval registered ( except infinity if exists)
-    def startPoints: Set[Int] = t.map(_._1)(collection.breakOut)
+    def startPoints: Set[Int] = {
+        if (openLeft)
+            t.tail.map(_._1)(collection.breakOut)
+        else
+            t.map(_._1)(collection.breakOut)
+    }
     def endPoints: Set[Int] = (t.map(_._2)(collection.breakOut): Set[Int]) - -1
 
     // Calculate the union with another interval
@@ -218,7 +225,7 @@ case class Intervals(t: Vector[(Int, Int)]) {
             if (matched.nonEmpty) rest +:= matched.last
             retval ++= matched map (x => (i._1.max(x._1), if (i._2 == -1) x._2 else if (x._2 == -1) i._2 else i._2.min(x._2)))
         }
-        Intervals(retval)
+        Intervals(retval, openLeft)
     }
 
     // Check if there is an interval whom this threshold timepoint cuts through and returns the starting point
@@ -231,8 +238,8 @@ case class Intervals(t: Vector[(Int, Int)]) {
         }
     }
 
-    def withHead(newStart: Int): Intervals = Intervals(t.tail.+:((newStart, t.head._2)))
-    def withLast(newLast: Int): Intervals = Intervals(t.init.:+((t.last._1, newLast)))
+    def withHead(newStart: Int): Intervals = Intervals(t.tail.+:((newStart, t.head._2)), openLeft)
+    def withLast(newLast: Int): Intervals = Intervals(t.init.:+((t.last._1, newLast)), openLeft)
 
     // Crop to fit at the given bounds
     def restrictOn(threshold: Int, clock: Int): Intervals = {
@@ -240,7 +247,7 @@ case class Intervals(t: Vector[(Int, Int)]) {
         if (ret.head._2 == threshold + clock)
             Intervals(ret.tail)
         else if (ret.head._1 <= threshold)
-            Intervals(ret).withHead(threshold + clock)
+            Intervals(ret, openLeft = true).withHead(threshold + clock)
         else
             Intervals(ret)
 
