@@ -59,6 +59,7 @@ object Reasoner {
         var recognitionTime = List.empty[Double]
         var inputEvents = List.empty[Int]
         var outputEvents = List.empty[Int]
+        var outputIntervals = List.empty[Int]
 
         while (_windowEnd < end) {
             wcount += 1
@@ -93,7 +94,8 @@ object Reasoner {
 
             // Write results for this window
             //println(header + _windowDB.output)
-            fd.append(_windowDB.output)
+            //fd.append(_windowDB.output)
+            _windowDB.output
 
             //val t4 = System.nanoTime() / 1000000.0
             //outputWritingTime +:= (t4 - t3)
@@ -108,6 +110,10 @@ object Reasoner {
             //println(s"Output Events: $outpEvents")
             outputEvents +:= outpEvents
 
+            val outpIntervals = _windowDB.countOutputIntervals
+            //println(s"Output Intervals: $outpIntervals")
+            outputIntervals +:= outpIntervals
+
             // Clear database
             _windowDB.clear()
 
@@ -118,7 +124,7 @@ object Reasoner {
             //println(s"Window cut time: ${t5 - t4} ms")
             //println(s"Window cut time: ${t5 - t3} ms")
 
-            val windowRecognitionTime = t5 - t0
+            val windowRecognitionTime = t5 - t1
             recognitionTime +:= windowRecognitionTime
             //println(s"Window recognition time: $windowRecognitionTime ms\n")
 
@@ -132,6 +138,7 @@ object Reasoner {
 
         println(s"\nAverage input events: ${inputEvents.sum / wcount}")
         println(s"\nAverage output events: ${outputEvents.sum / wcount}")
+        println(s"\nAverage output intervals: ${outputIntervals.sum / wcount}")
         println(s"\nAverage input parsing time: ${inputParsingTIme.init.sum / wcount}")
         println(s"Average entity calculation time: ${entityCalculationTime.init.sum / wcount}")
         println(s"Average CE reasoning time: ${CEReasoningTime.init.sum / wcount}")

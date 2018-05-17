@@ -194,4 +194,8 @@ class EventDB(val iEs: Map[Data.InstantEventId, Data.InstantEvent],
     def countEvents: Int = {
         _iETime.values.map(_.size).sum + _fluentTime.values.map(_.size).sum
     }
+
+    def countOutputIntervals: Int = {
+        _iETime.values.flatMap(_.values.map(_.size)).sum + _fluentTime.values.flatMap(_.values.map(_.t.size)).sum
+    }
 }
